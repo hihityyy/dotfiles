@@ -41,6 +41,8 @@ dotfiles/
 │   │   └── window-rule.kdl
 │   ├── niri-layout            # compiled binary
 │   └── niri-layout.cpp        # auto layout switcher source
+├── noctalia/   
+    └──settings.json           # noctalia shell settings
 ├── yazi/
 │   ├── flavors/
 │   │   └── noctalia.yazi/
