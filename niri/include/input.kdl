@@ -9,5 +9,5 @@ input {
     mouse {
         accel-speed -0.4
     }
-     focus-follows-mouse
+    // focus-follows-mouse
 }
