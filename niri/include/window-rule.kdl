@@ -31,7 +31,7 @@ window-rule {
     match app-id="io.github.elyprismlauncher.ElyPrismLauncher"
     match app-id="zen"
     match app-id="vesktop"
-    match app-id="org.pitivi.Pitivi"
+    match app-id="losslesscut"
     match app-id="io.github.celluloid_player.Celluloid"
     match app-id="org.gnome.Evince"
     match app-id="org.gnome.eog"
