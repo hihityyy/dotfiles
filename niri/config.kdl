@@ -16,15 +16,17 @@
 //         ╚═════╝  ╚═════╝  ╚═╝  ╚═══╝ ╚═╝      ╚═╝  ╚═════╝
 
 
-include "./include/autostart.kdl"
-include "./include/output.kdl"
+include "./include/spawn-at-startup.kdl"
 include "./include/environment.kdl"
+include "./include/output.kdl"
+include "./include/input.kdl"
+include "./include/gestures.kdl"
 include "./include/binds.kdl"
 include "./include/layout.kdl"
 include "./include/window-rule.kdl"
+include "./include/layer-rule.kdl"
 include "./include/animations.kdl"
-include "./include/input.kdl"
-include "./include/gestures.kdl"
+include "./include/hotkey-overlay.kdl"
 include "./include/debug.kdl"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"

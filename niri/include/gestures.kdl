@@ -4,6 +4,3 @@ gestures {
     }
 }
 
-hotkey-overlay {
-    skip-at-startup true
-}

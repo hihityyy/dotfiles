@@ -15,7 +15,7 @@
     "enableExclusionZoneInset": false,
     "backgroundOpacity": 0.9,
     "useSeparateOpacity": true,
-    "marginVertical": 6,
+    "marginVertical": 5,
     "marginHorizontal": 7,
     "frameThickness": 8,
     "frameRadius": 12,
@@ -230,7 +230,7 @@
   },
   "wallpaper": {
     "enabled": true,
-    "overviewEnabled": false,
+    "overviewEnabled": true,
     "directory": "/home/hihity/Pictures/Wallpapers",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
@@ -254,7 +254,7 @@
     "panelPosition": "center",
     "hideWallpaperFilenames": true,
     "useOriginalImages": false,
-    "overviewBlur": 0.2,
+    "overviewBlur": 0.3,
     "overviewTint": 0.6,
     "useWallhaven": false,
     "wallhavenQuery": "minimalism",
@@ -282,8 +282,7 @@
     "position": "center",
     "pinnedApps": [
       "code",
-      "org.qbittorrent.qBittorrent",
-      "steam"
+      "org.qbittorrent.qBittorrent"
     ],
     "sortByMostUsed": true,
     "terminalCommand": "kitty -e",
@@ -310,10 +309,15 @@
           "id": "Network"
         },
         {
-          "id": "NoctaliaPerformance"
-        },
-        {
-          "id": "Notifications"
+          "enableOnStateLogic": false,
+          "generalTooltipText": "",
+          "icon": "reload",
+          "id": "CustomButton",
+          "onClicked": "killall qs && qs -c noctalia-shell ",
+          "onMiddleClicked": "",
+          "onRightClicked": "",
+          "showExecTooltip": true,
+          "stateChecksJson": "[]"
         },
         {
           "enableOnStateLogic": false,
@@ -332,17 +336,6 @@
           "icon": "fish",
           "id": "CustomButton",
           "onClicked": "kitty -e yazi .config/fish/",
-          "onMiddleClicked": "",
-          "onRightClicked": "",
-          "showExecTooltip": true,
-          "stateChecksJson": "[]"
-        },
-        {
-          "enableOnStateLogic": false,
-          "generalTooltipText": "",
-          "icon": "reload",
-          "id": "CustomButton",
-          "onClicked": "killall qs && nohup qs -c noctalia-shell > /dev/null 2>&1 &     ",
           "onMiddleClicked": "",
           "onRightClicked": "",
           "showExecTooltip": true,
@@ -570,7 +563,7 @@
   },
   "brightness": {
     "brightnessStep": 6,
-    "enforceMinimum": false,
+    "enforceMinimum": true,
     "enableDdcSupport": true,
     "backlightDeviceMappings": []
   },
@@ -646,6 +639,78 @@
       {
         "enabled": true,
         "id": "qt"
+      },
+      {
+        "enabled": true,
+        "id": "alacritty"
+      },
+      {
+        "enabled": true,
+        "id": "emacs"
+      },
+      {
+        "enabled": true,
+        "id": "foot"
+      },
+      {
+        "enabled": true,
+        "id": "fuzzel"
+      },
+      {
+        "enabled": true,
+        "id": "hyprland"
+      },
+      {
+        "enabled": true,
+        "id": "labwc"
+      },
+      {
+        "enabled": true,
+        "id": "hyprtoolkit"
+      },
+      {
+        "enabled": true,
+        "id": "mango"
+      },
+      {
+        "enabled": true,
+        "id": "scroll"
+      },
+      {
+        "enabled": true,
+        "id": "sway"
+      },
+      {
+        "enabled": true,
+        "id": "walker"
+      },
+      {
+        "enabled": true,
+        "id": "zed"
+      },
+      {
+        "enabled": true,
+        "id": "code"
+      },
+      {
+        "enabled": true,
+        "id": "steam"
+      },
+      {
+        "enabled": true,
+        "id": "vicinae"
+      },
+      {
+        "enabled": true,
+        "id": "wezterm"
+      },
+      {
+        "enabled": true,
+        "id": "spicetify"
+      },
+      {
+        "enabled": true,
+        "id": "ghostty"
       }
     ],
     "enableUserTheming": true

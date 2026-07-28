@@ -29,20 +29,22 @@ dotfiles/
 │   ├── config.kdl             # wayland compositor config
 │   ├── noctalia.kdl           # noctalia-shell integration
 │   ├── include/
-│   │   ├── animations.kdl
-│   │   ├── autostart.kdl
-│   │   ├── binds.kdl
-│   │   ├── debug.kdl
-│   │   ├── environment.kdl
-│   │   ├── gestures.kdl
-│   │   ├── input.kdl
-│   │   ├── layout.kdl
-│   │   ├── output.kdl
-│   │   └── window-rule.kdl
-│   ├── niri-layout            # compiled binary
+    │   ├──  animations.kdl
+│   │   ├──  binds.kdl
+│   │   ├──  debug.kdl
+│   │   ├──  environment.kdl
+│   │   ├──  gestures.kdl
+│   │   ├──  hotkey-overlay.kdl
+│   │   ├──  input.kdl
+│   │   ├──  layer-rule.kdl
+│   │   ├──  layout.kdl
+│   │   ├──  output.kdl
+│   │   ├──  spawn-at-startup.kdl
+│   │   └──  window-rule.kdl
+    ├── niri-layout            # compiled binary
 │   └── niri-layout.cpp        # auto layout switcher source
 ├── noctalia/   
-    └──settings.json           # noctalia shell settings
+    └──settings.json           # noctalia shell se
 ├── yazi/
 │   ├── flavors/
 │   │   └── noctalia.yazi/

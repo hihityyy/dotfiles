@@ -1,11 +1,10 @@
 layout {
     // always-center-single-column
-    gaps 7
+    gaps 8
     preset-column-widths {
         fixed 1260
         fixed 840
         fixed 630
-        fixed 420 
     }
     preset-window-heights {
         fixed 640
