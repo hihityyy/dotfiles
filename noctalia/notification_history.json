@@ -1,0 +1,293 @@
+{
+  "change_serial": 62,
+  "entries": [
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 23,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785691148197,
+        "icon": null,
+        "id": 66,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785691142197,
+        "summary": "WARP Status",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 27,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "⁨@member⁩ войс",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1785743529645,
+        "icon": null,
+        "id": 72,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_566b1aea8adf4b9bb9dbd80df5397645.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785743523150,
+        "summary": "⁨leaver657⁩ (⁨#чатик-general⁩, ⁨общение⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 31,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "Разбанили",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 0,
+        "icon": null,
+        "id": 77,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_8601ec96861b4a30a7a9761efe43bf19.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785745443868,
+        "summary": "leaver",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 38,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785749534350,
+        "icon": null,
+        "id": 81,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785749528350,
+        "summary": "WARP Status",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 44,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785751617655,
+        "icon": null,
+        "id": 84,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785751611655,
+        "summary": "WARP Status",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 46,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785751988346,
+        "icon": null,
+        "id": 85,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785751982346,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 48,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785752036766,
+        "icon": null,
+        "id": 86,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785752030766,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 50,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Settings Changed",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785752045078,
+        "icon": null,
+        "id": 87,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785752039078,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 54,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785752355124,
+        "icon": null,
+        "id": 89,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785752349124,
+        "summary": "WARP Status",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 56,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785753566293,
+        "icon": null,
+        "id": 90,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785753560293,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 58,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785753745834,
+        "icon": null,
+        "id": 91,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785753739834,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 62,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785755046730,
+        "icon": null,
+        "id": 93,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785755040730,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    }
+  ],
+  "next_id": 94,
+  "version": 2
+}

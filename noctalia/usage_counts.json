@@ -1,0 +1,44 @@
+{
+  "Applications": {
+    "/home/hihity/.local/share/applications/Trackmania.desktop": 2,
+    "/home/hihity/.local/share/applications/cs2.desktop": 6,
+    "/usr/share/applications/firefox.desktop": 23,
+    "/usr/share/applications/io.github.elyprismlauncher.ElyPrismLauncher.desktop": 23,
+    "/usr/share/applications/obsidian.desktop": 3,
+    "/usr/share/applications/org.freedesktop.IBus.Setup.desktop": 1,
+    "/usr/share/applications/org.gnome.Evince.desktop": 1,
+    "/usr/share/applications/org.gnome.Nautilus.desktop": 2,
+    "/usr/share/applications/org.gnome.Terminal.desktop": 1,
+    "/usr/share/applications/org.gnome.seahorse.Application.desktop": 1,
+    "/usr/share/applications/org.telegram.desktop.desktop": 1,
+    "/usr/share/applications/proton-bridge.desktop": 1,
+    "/usr/share/applications/proton-mail.desktop": 1,
+    "/usr/share/applications/scrcpy.desktop": 1,
+    "/usr/share/applications/steam.desktop": 4,
+    "/usr/share/applications/vesktop.desktop": 12
+  },
+  "Wallpaper": {
+    "/home/hihity/Pictures/Wallpapers/i-01.png": 1,
+    "/home/hihity/Pictures/Wallpapers/i-05.png": 1,
+    "/home/hihity/Pictures/Wallpapers/i-14.jpg": 1,
+    "/home/hihity/Pictures/Wallpapers/i-19.png": 1,
+    "/home/hihity/Pictures/Wallpapers/i-21.png": 2,
+    "/home/hihity/Pictures/Wallpapers/i-23.png": 2
+  },
+  "dmenu.keybinds": {
+    "Open\tShow keybind cheatsheet": 5,
+    "Open Keybinds\tShow keyboard shortcuts cheatsheet": 1
+  },
+  "dmenu.screen_recorder": {
+    "Save Replay\tSave replay buffer to file": 3,
+    "Start Recording\tBegin new capture": 2,
+    "Start/Stop Recording\tStart or stop recording": 29,
+    "Start/Stop Replay Buffer\tStart/stop replay buffer": 7,
+    "Stop Recording\tEnd current capture": 2
+  },
+  "dmenu.warp": {
+    "Connect\tConnect to WARP": 8,
+    "Disconnect\tDisconnect from WARP": 4,
+    "Status\tShow connection status": 5
+  }
+}
