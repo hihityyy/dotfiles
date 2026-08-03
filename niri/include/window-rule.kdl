@@ -1,6 +1,6 @@
 window-rule {
     // open-floating false
-    geometry-corner-radius 9
+    geometry-corner-radius 12
     clip-to-geometry true
     opacity 0.9
     draw-border-with-background false
@@ -9,10 +9,14 @@ window-rule {
     }
     border {
          on
-         width 4
+         width 2
     }
     shadow {
-          off
+          on
+          spread 0
+          offset x=0 y=4
+          color "#00000040"
+          inactive-color "#00000026"
     }
     default-column-width { fixed 630; }
     default-window-height { fixed 960; }
@@ -36,6 +40,7 @@ window-rule {
     match app-id="org.gnome.Evince"
     match app-id="org.gnome.eog"
     match app-id="de.haeckerfelix.Fragments"
+    match app-id="steam"
     default-column-width { fixed 1260; }
     default-window-height { fixed 960; }
 }

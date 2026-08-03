@@ -1,25 +1,26 @@
 binds {
-    Super+C                                                 { spawn "kitty"; }
+    Super+Return                                            { spawn "kitty"; }
     Super+E                                                 { spawn "kitty" "-e" "yazi"; }
     Super+I                                                 { spawn "kitty" "-e" "nvim"; }
-    Super+R                                                 { spawn "obs-cmd" "replay" "save"; }
-    Super+X                                                 { screenshot; }
+    Super+M                                                 { spawn "kitty" "-e" "btop"; }
+    Super+X                                                 { spawn-sh "noctalia msg screenshot-region"; }
  
-    Super+P                                                 { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
-    Super+W                                                 { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
-    Super+D                                                 { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Super+B                                                 { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    Super+Ctrl+B                                            { spawn-sh "qs -c noctalia-shell ipc call idleInhibitor toggle"; }
-    Super+Shift+B                                           { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
-    Super+Z                                                 { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
-    Super+Comma                                             { spawn-sh "qs -c noctalia-shell ipc call settings open"; }
-    Super+Escape                                            { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Super+P                                                 { spawn-sh "noctalia msg media toggle"; }
+    Super+C                                                 { spawn-sh "noctalia msg panel-toggle launcher /"; }
+    Super+W                                                 { spawn-sh "noctalia msg panel-toggle launcher /wall"; }
+    Super+T                                                 { spawn-sh "noctalia msg panel-toggle launcher /web"; }
+    Super+Shift+W                                           { spawn-sh "noctalia msg wallpaper-random"; }
+    Super+D                                                 { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Super+B                                                 { spawn-sh "noctalia msg session lock"; }
+    Super+Shift+B                                           { spawn-sh "noctalia msg session lock-and-suspend"; }
+    Super+Z                                                 { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Super+R                                                 { spawn-sh "noctalia msg panel-toggle launcher /rec"; }
+    Super+Comma                                             { spawn-sh "noctalia msg settings-toggle"; }
+    Super+Escape                                            { spawn-sh "noctalia msg panel-toggle launcher /session"; }
 
-    XF86AudioRaiseVolume                                    { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
-    XF86AudioLowerVolume                                    { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; }
-    XF86AudioMute                                           { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
-    Shift+XF86AudioRaiseVolume                              { spawn-sh "qs -c noctalia-shell ipc call brightness increase"; }
-    Shift+XF86AudioLowerVolume                              { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
+    XF86AudioRaiseVolume                                    { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume                                    { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute                                           { spawn-sh "noctalia msg volume-mute"; }
 
     Super+Q                                                 { close-window; }
     Super+F                                                 { fullscreen-window; }

@@ -1,3 +1,2 @@
-spawn-sh-at-startup "qs -c noctalia-shell"
-spawn-sh-at-startup "path/to/hiri-layout"
+spawn-at-startup "noctalia"
 prefer-no-csd

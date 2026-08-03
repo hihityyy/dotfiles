@@ -1,19 +1,25 @@
-[manager]
+[mgr]
 prepend_keymap = [
   { on = "h", run = "leave",         desc = "Go to parent" },
   { on = "l", run = "enter",         desc = "Enter directory" },
   { on = "j", run = "arrow 1",       desc = "Move down" },
   { on = "k", run = "arrow -1",      desc = "Move up" },
-  { on = "g", run = "arrow top",     desc = "Go to top" },
-  { on = "G", run = "arrow bottom",  desc = "Go to bottom" },
 
   { on = "<Enter>", run = "open",                desc = "Open" },
   { on = "o",       run = "open --interactive",  desc = "Open with..." },
 
-  { on = "<Space>", run = "select --state=none",    desc = "Toggle select" },
+  { on = "<Space>", run = "toggle", desc = "Toggle select" }, 
   { on = "v",       run = "visual_mode",             desc = "Visual mode" },
   { on = "V",       run = "select_all --state=true", desc = "Select all" },
   { on = "<Esc>",   run = "escape",                  desc = "Escape" },
+
+  { on = ["g", "g"], run = "arrow top",        desc = "Go to top" },
+  { on = "G",        run = "arrow bot",     desc = "Go to bottom" },
+  { on = ["g", "h"], run = "cd ~",             desc = "Go home" },
+  { on = ["g", "c"], run = "cd ~/.config",     desc = "Go to config" },
+  { on = ["g", "d"], run = "cd ~/Downloads",   desc = "Go to downloads" },
+  { on = ["g", "r"], run = "cd /",             desc = "Go to root" },
+  { on = ["g", "<Space>"], run = "cd --interactive", desc = "Go to (manual path)" },
 
   { on = "y", run = "yank",                          desc = "Yank (copy)" },
   { on = "x", run = "yank --cut",                    desc = "Cut" },
@@ -21,7 +27,8 @@ prepend_keymap = [
   { on = "d", run = "trash",                         desc = "Trash" },
   { on = "D", run = "remove",                        desc = "Delete permanently" },
   { on = "r", run = "rename --cursor=before_ext",    desc = "Rename" },
-  { on = "a", run = "create",                        desc = "Create file/dir" },
+  { on = "a", run = "create",                        desc = "Create file" },
+  { on = "A", run = "create --dir",                  desc = "Create dir" },
 
   { on = ["c", "p"], run = "copy path",     desc = "Copy full path" },
   { on = ["c", "d"], run = "copy dirname",  desc = "Copy directory" },
@@ -33,8 +40,16 @@ prepend_keymap = [
   { on = "f", run = "filter --smart",            desc = "Filter" },
 
   { on = "t", run = "tab_create --current",          desc = "New tab" },
+  { on = "T", run = "close",                         desc = "Close tab" },
   { on = "[", run = "tab_switch -1 --relative",      desc = "Prev tab" },
   { on = "]", run = "tab_switch 1 --relative",       desc = "Next tab" },
+  { on = "1", run = "tab_switch 0",                  desc = "Tab 1" },
+  { on = "2", run = "tab_switch 1",                  desc = "Tab 2" },
+  { on = "3", run = "tab_switch 2",                  desc = "Tab 3" },
+  { on = "4", run = "tab_switch 3",                  desc = "Tab 4" },
+  { on = "5", run = "tab_switch 4",                  desc = "Tab 5" },
+  { on = ["<C-[>"], run = "tab_swap -1",             desc = "Swap tab left" },
+  { on = ["<C-]>"], run = "tab_swap 1",              desc = "Swap tab right" },
 
   { on = ["s", "n"], run = "sort name --reverse=no",      desc = "Sort by name" },
   { on = ["s", "s"], run = "sort size --reverse=yes",     desc = "Sort by size" },

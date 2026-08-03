@@ -1,6 +1,6 @@
-[manager]
+[mgr]
 ratio          = [1, 2, 4]
-sort_by        = "name"
+sort_by        = "natural"
 sort_sensitive = false
 sort_reverse   = false
 sort_dir_first = true
@@ -18,6 +18,10 @@ image = [
 video = [
   { run = 'celluloid "$@"', orphan = true, desc = "Celluloid" },
 ]
+audio = [
+  { run = 'lollypop -f "$@"', orphan = true, desc = "Lollypop" },
+  { run = 'celluloid "$@"', orphan = true, desc = "Celluloid" },
+]
 pdf = [
   { run = 'evince "$@"', orphan = true, desc = "Evince" },
 ]
@@ -30,18 +34,17 @@ extract = [
 
 [open]
 rules = [
-  { mime = "text/*",               use = "edit" },
-  { mime = "inode/x-empty",        use = "edit" },
-  { mime = "image/*",              use = "image" },
-  { mime = "video/*",              use = "video" },
-  { mime = "audio/*",              use = "video" },
-  { mime = "application/pdf",      use = "pdf" },
-  { mime = "application/zip",      use = "extract" },
-  { mime = "application/x-tar",    use = "extract" },
+  { mime = "image/*",          use = "image" },
+  { mime = "video/*",          use = "video" },
+  { mime = "audio/*",          use = "audio" },
+  { mime = "application/pdf",  use = "pdf" },
+  { mime = "application/zip",             use = "extract" },
+  { mime = "application/x-tar",           use = "extract" },
   { mime = "application/x-7z-compressed", use = "extract" },
-  { mime = "application/x-rar",    use = "extract" },
-  { mime = "*",                    use = "open" },
+  { mime = "application/x-rar",           use = "extract" },
+  { url  = "*",                use = "edit" },
 ]
+
 [tasks]
 micro_workers    = 10
 macro_workers    = 25
