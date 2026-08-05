@@ -102,8 +102,8 @@ dotfiles/
 ## Dependencies
 
 ```sh
-sudo pacman -S niri kitty fish yazi zoxide lsd bat cava lazygit ttf-fira-code xdg-desktop-portal-gnome qt6ct playerctl celluloid eog neovim jq
-paru -S noctalia-git qs obs-cmd
+sudo pacman -S niri kitty fish yazi zoxide lsd bat cava lazygit xdg-desktop-portal-gnome celluloid eog neovim
+paru -S noctalia-git
 ```
 
 > [Noctalia](https://docs.noctalia.dev) v5 is installed from the AUR (`noctalia-git`) — replace `paru` with your AUR helper of choice.
