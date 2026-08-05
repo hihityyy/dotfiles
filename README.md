@@ -25,7 +25,10 @@ dotfiles/
 │       ├── solarized_dark
 │       └── tricolor
 ├── fastfetch/
-│   └── config.jsonc           # fastfetch config
+│   ├── arch_logo.png          # png arch_logo
+    ├── config.jsonc           # fastfetch config
+    ├── hihitylogo.txt         # my own arch_logo
+    └── textlogo               # asci text ArchLinux
 ├── fish/
 │   ├── config.fish            # shell config
 │   ├── fish_plugins           # fisher plugin list (incl. tide)
