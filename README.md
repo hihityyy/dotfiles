@@ -129,6 +129,4 @@ tide configure
 
 ## Wallpapers
 
-My wallpapers are [here](https://golnk.ru/YGARz).
-
 [![preview](./preview.png)](./preview.png)
