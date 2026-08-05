@@ -3,6 +3,7 @@
   "logo": {
     "source": "~/.config/fastfetch/hihitylogo.txt",
     "position": "left",
+    "color": { "1": "blue" },
     "padding": { "top": 1, "right": 2 }
   },
   "display": {
