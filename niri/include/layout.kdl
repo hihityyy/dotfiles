@@ -3,14 +3,14 @@ layout {
     gaps 8
     preset-column-widths {
         fixed 1260
-        fixed 840
-        fixed 630
-        fixed 420
+        fixed 836
+        fixed 624
+        fixed 412
     }
     preset-window-heights {
-        fixed 640
-        fixed 480
-        fixed 320
-        fixed 960
+        fixed 636
+        fixed 476
+        fixed 316
+        fixed 964
     }
 }

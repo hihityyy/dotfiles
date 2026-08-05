@@ -12,14 +12,14 @@ window-rule {
          width 2
     }
     shadow {
-          on
+          off
           spread 0
           offset x=0 y=4
           color "#00000040"
           inactive-color "#00000026"
     }
-    default-column-width { fixed 630; }
-    default-window-height { fixed 960; }
+    default-column-width { fixed 624; }
+    default-window-height { fixed 964; }
     open-fullscreen false
     background-effect {
           blur true
@@ -42,13 +42,12 @@ window-rule {
     match app-id="de.haeckerfelix.Fragments"
     match app-id="steam"
     default-column-width { fixed 1260; }
-    default-window-height { fixed 960; }
 }
 window-rule {
     match app-id="org.telegram.desktop"
     match app-id="kitty"
-    default-column-width { fixed 840; }
-    default-window-height { fixed 960; }
+    match app-id="nautilus"
+    default-column-width { fixed 836; }
 }
 window-rule {
     match app-id="scrcpy"

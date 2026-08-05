@@ -2,37 +2,38 @@ binds {
     Super+Return                                            { spawn "kitty"; }
     Super+E                                                 { spawn "kitty" "-e" "yazi"; }
     Super+I                                                 { spawn "kitty" "-e" "nvim"; }
-    Super+M                                                 { spawn "kitty" "-e" "btop"; }
-    Super+X                                                 { spawn-sh "noctalia msg screenshot-region"; }
  
-    Super+P                                                 { spawn-sh "noctalia msg media toggle"; }
-    Super+C                                                 { spawn-sh "noctalia msg panel-toggle launcher /"; }
-    Super+W                                                 { spawn-sh "noctalia msg panel-toggle launcher /wall"; }
-    Super+T                                                 { spawn-sh "noctalia msg panel-toggle launcher /web"; }
-    Super+Shift+W                                           { spawn-sh "noctalia msg wallpaper-random"; }
+    Super+X                                                 { spawn-sh "noctalia msg screenshot-region"; }
+    Super+Z                                                 { spawn-sh "noctalia msg panel-toggle control-center"; }
     Super+D                                                 { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Super+Shift+D                                           { spawn-sh "noctalia msg panel-toggle launcher /"; }
+    Super+W                                                 { spawn-sh "noctalia msg panel-toggle launcher /wall"; }
+    Super+Shift+W                                           { spawn-sh "noctalia msg wallpaper-random"; }
+    Super+T                                                 { spawn-sh "noctalia msg panel-toggle launcher /web"; }
+    Super+R                                                 { spawn-sh "noctalia msg panel-toggle launcher /rec"; }
+    Super+Escape                                            { spawn-sh "noctalia msg panel-toggle launcher /session"; }
     Super+B                                                 { spawn-sh "noctalia msg session lock"; }
     Super+Shift+B                                           { spawn-sh "noctalia msg session lock-and-suspend"; }
-    Super+Z                                                 { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Super+R                                                 { spawn-sh "noctalia msg panel-toggle launcher /rec"; }
     Super+Comma                                             { spawn-sh "noctalia msg settings-toggle"; }
-    Super+Escape                                            { spawn-sh "noctalia msg panel-toggle launcher /session"; }
 
     XF86AudioRaiseVolume                                    { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume                                    { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute                                           { spawn-sh "noctalia msg volume-mute"; }
+    Super+P                                                 { spawn-sh "noctalia msg media toggle"; }
 
     Super+Q                                                 { close-window; }
     Super+F                                                 { fullscreen-window; }
+    Super+Shift+F                                           { toggle-windowed-fullscreen; }
     Super+V                                                 { toggle-window-floating; }
     Super+Shift+V                                           { switch-focus-between-floating-and-tiling; }
-    Super+N                                                 { toggle-overview; }
+    Super+O                                                 { toggle-overview; }
+    Super+M                                                 { toggle-column-tabbed-display; }
 
     Super+S                                                 { switch-preset-column-width; }
     Super+Shift+S                                           { switch-preset-column-width-back; }
     Super+A                                                 { switch-preset-window-height; }
     Super+Shift+A                                           { switch-preset-window-height-back; }
-    Super+U                                                 { center-column; }
+    Super+C                                                 { center-column; }
 
     Super+H                                                 { focus-column-left; }
     Super+L                                                 { focus-column-right; }
@@ -40,22 +41,24 @@ binds {
     Super+End                                               { focus-column-last; }
     Super+Shift+Home                                        { move-column-to-first; }
     Super+Shift+End                                         { move-column-to-last; }
-    Super+J                                                 { focus-workspace-down; }
-    Super+K                                                 { focus-workspace-up; }
-    Super+WheelScrollDown       cooldown-ms=150             { focus-column-right; }
-    Super+WheelScrollUp         cooldown-ms=150             { focus-column-left; }
-    Super+Ctrl+WheelScrollDown cooldown-ms=150              { focus-workspace-down; }
-    Super+Ctrl+WheelScrollUp   cooldown-ms=150              { focus-workspace-up; }
+    Super+J                                                 { focus-window-or-workspace-down; }
+    Super+K                                                 { focus-window-or-workspace-up; }
+    Super+WheelScrollDown               cooldown-ms=150     { focus-column-right; }
+    Super+WheelScrollUp                 cooldown-ms=150     { focus-column-left; }
+    Super+Ctrl+WheelScrollDown          cooldown-ms=150     { focus-window-or-workspace-down; }
+    Super+Ctrl+WheelScrollUp            cooldown-ms=150     { focus-window-or-workspace-up; }
 
-    Super+Shift+H                                           { consume-or-expel-window-left; }
-    Super+Shift+L                                           { consume-or-expel-window-right; }
-    Super+Shift+J                                           { move-window-to-workspace-down; }
-    Super+Shift+K                                           { move-window-to-workspace-up; }
-    Super+Shift+WheelScrollDown       cooldown-ms=150       { consume-or-expel-window-right; }
-    Super+Shift+WheelScrollUp         cooldown-ms=150       { consume-or-expel-window-left; }
-    Super+Shift+Ctrl+WheelScrollDown cooldown-ms=150        { move-window-to-workspace-down; }
-    Super+Shift+Ctrl+WheelScrollUp   cooldown-ms=150        { move-window-to-workspace-up; }
+    Super+Shift+H                                           { move-column-left; }
+    Super+Shift+L                                           { move-column-right; }
+    Super+Shift+J                                           { move-window-down-or-to-workspace-down; }
+    Super+Shift+K                                           { move-window-up-or-to-workspace-up; }
+    Super+Shift+WheelScrollUp           cooldown-ms=150     { move-column-left; }
+    Super+Shift+WheelScrollDown         cooldown-ms=150     { move-column-right; }
+    Super+Shift+Ctrl+WheelScrollDown    cooldown-ms=150     { move-window-down-or-to-workspace-down; }
+    Super+Shift+Ctrl+WheelScrollUp      cooldown-ms=150     { move-window-up-or-to-workspace-up; }
 
+    Super+Ctrl+H                                            { consume-or-expel-window-left; }
+    Super+Ctrl+L                                            { consume-or-expel-window-right; }
     Super+Ctrl+J                                            { move-workspace-down; }
     Super+Ctrl+K                                            { move-workspace-up; }
 }
