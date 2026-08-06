@@ -19,7 +19,6 @@ window-rule {
           inactive-color "#00000026"
     }
     default-column-width { fixed 624; }
-    default-window-height { fixed 964; }
     open-fullscreen false
     background-effect {
           blur true

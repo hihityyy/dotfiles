@@ -1,16 +1,16 @@
 layout {
-    // always-center-single-column
+    always-center-single-column
     gaps 8
     preset-column-widths {
-        fixed 1260
-        fixed 836
-        fixed 624
-        fixed 412
+        proportion 1.0
+        proportion 0.66667
+        proportion 0.5
+        proportion 0.33333
     }
     preset-window-heights {
-        fixed 636
-        fixed 476
-        fixed 316
-        fixed 964
+        proportion 0.66667
+        proportion 0.5
+        proportion 0.33333
+        proportion 1.0
     }
 }
