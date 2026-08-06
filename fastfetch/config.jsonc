@@ -15,16 +15,16 @@
     { "type": "title", "format": "{user-name}@{host-name}/" },
 
     { "type": "custom", "key":   "├─ system/", "keyColor": "white", "format": "" },
-    { "type": "os", "key":       "│  ├─  OS", "keyColor": "blue", "format": "Arch Linux" },
-    { "type": "kernel", "key":   "│  ├─  Kernel", "keyColor": "blue", "format": "{2}" },
+    { "type": "os", "key":       "│  ├─  OS", "keyColor": "blue", "format": "Arch Linux" },
+    { "type": "kernel", "key":   "│  ├─  Kernel", "keyColor": "blue", "format": "{2}" },
     { "type": "uptime", "key":   "│  └─  Uptime", "keyColor": "blue" },
     { "type": "custom", "key":   "├─ shell/", "keyColor": "white", "format": "" },
-    { "type": "shell", "key":    "│  ├─  Shell", "keyColor": "green" },
+    { "type": "shell", "key":    "│  ├─ 󰆍 Shell", "keyColor": "green" },
     { "type": "wm", "key":       "│  ├─ 󱂬 WM", "keyColor": "green" },
     { "type": "terminal", "key": "│  └─  Term", "keyColor": "green" },
     { "type": "custom", "key":   "└─ hardware/", "keyColor": "white", "format": "" },
     { "type": "cpu", "key":      "   ├─  CPU", "keyColor": "yellow", "format": "{1}" },
-    { "type": "gpu", "key":      "   ├─  GPU", "keyColor": "yellow", "format": "{2}" },
+    { "type": "gpu", "key":      "   ├─ 󰢮 GPU", "keyColor": "yellow", "format": "{2}" },
     { "type": "memory", "key":   "   ├─  RAM", "keyColor": "yellow" },
     { "type": "disk", "key":     "   └─  Disk", "keyColor": "yellow" }
   ]
