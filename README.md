@@ -103,12 +103,19 @@ dotfiles/
 
 ## Dependencies
 
+### Pacman
+
 ```sh
-sudo pacman -S niri kitty fish yazi zoxide lsd bat cava lazygit xdg-desktop-portal-gnome celluloid eog neovim nlohmann-json jq
+sudo pacman -S niri kitty fish yazi zoxide lsd bat cava lazygit xdg-desktop-portal-gnome celluloid eog evince lollypop nautilus xdg-utils neovim nlohmann-json jq
+```
+
+### AUR
+
+```sh
 paru -S noctalia-git
 ```
 
-> [Noctalia](https://docs.noctalia.dev) v5 is installed from the AUR (`noctalia-git`) — replace `paru` with your AUR helper of choice.
+> Replace `paru` with your AUR helper of choice.
 
 ## Niri-kb-layout
 
@@ -127,15 +134,21 @@ Background daemon that auto-switches keyboard layout to English when focusing a 
 g++ -std=c++20 niri/niri-kb-layout.cpp -o niri/niri-kb-layout
 ```
 
-**Run (background):**
-Add to `niri/include/spawn-at-startup.kdl`:
-```kdl
-spawn-at-startup "niri-kb-layout"
-```
+**Run:**
 
-Or run manually:
+You can run it manually from the repo:
 ```sh
 ./niri/niri-kb-layout &
+```
+
+Or move it to `/usr/bin` so Niri can launch it automatically:
+```sh
+sudo cp niri/niri-kb-layout /usr/bin/
+```
+
+Then add to `niri/include/spawn-at-startup.kdl`:
+```kdl
+spawn-at-startup "niri-kb-layout"
 ```
 
 ## Fish setup

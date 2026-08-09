@@ -1,12 +1,14 @@
 {
   "Applications": [
+    "/usr/share/applications/obsidian.desktop",
     "/usr/share/applications/firefox.desktop",
     "/usr/share/applications/vesktop.desktop",
-    "/usr/share/applications/org.gnome.Nautilus.desktop",
     "/usr/share/applications/steam.desktop",
+    "/usr/share/applications/org.gnome.Nautilus.desktop",
+    "/usr/share/applications/nwg-look.desktop",
+    "/usr/share/applications/qt6ct.desktop",
     "/usr/share/applications/losslesscut-bin.desktop",
     "/usr/share/applications/org.gnome.seahorse.Application.desktop",
-    "/usr/share/applications/obsidian.desktop",
     "/usr/share/applications/org.telegram.desktop.desktop",
     "/usr/share/applications/dev.noctalia.Noctalia.desktop",
     "/usr/share/applications/io.github.elyprismlauncher.ElyPrismLauncher.desktop",
@@ -17,12 +19,11 @@
     "/usr/share/applications/scrcpy.desktop",
     "/usr/share/applications/org.freedesktop.IBus.Setup.desktop",
     "/usr/share/applications/org.gnome.Terminal.desktop",
-    "/home/hihity/.local/share/applications/Trackmania.desktop",
-    "/usr/share/applications/proton-mail.desktop",
-    "/usr/share/applications/proton-bridge.desktop"
+    "/home/hihity/.local/share/applications/Trackmania.desktop"
   ],
   "Wallpaper": [
     "/home/hihity/Pictures/Wallpapers/i-01.png",
+    "/home/hihity/Pictures/Wallpapers/i-10.png",
     "/home/hihity/Pictures/Wallpapers/i-14.png",
     "/home/hihity/Pictures/Wallpapers/i-03.png",
     "/home/hihity/Pictures/Wallpapers/i-07.png",
@@ -34,7 +35,6 @@
     "/home/hihity/Pictures/Wallpapers/i-04.png",
     "/home/hihity/Pictures/Wallpapers/i-12.png",
     "/home/hihity/Pictures/Wallpapers/i-08.png",
-    "/home/hihity/Pictures/Wallpapers/i-10.png",
     "/home/hihity/Pictures/Wallpapers/i-02.png",
     "/home/hihity/Pictures/Wallpapers/i-13.png",
     "/home/hihity/Pictures/Wallpapers/i-05.png",

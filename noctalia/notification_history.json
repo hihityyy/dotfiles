@@ -1,5 +1,5 @@
 {
-  "change_serial": 214,
+  "change_serial": 218,
   "entries": [
     {
       "active": false,
@@ -407,7 +407,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_311139e6f74f07c3e03bffcc2a60b884.webp",
+          "image_file": "i_809069d66888483e53c602a0a6e79c7c.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -695,7 +695,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_0b18b43d083bd5a94da2da6edfb9f743.webp",
+          "image_file": "i_24c9dd160eae6f34f0f0976893d9a70d.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -849,7 +849,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_1a244c7b872ac33370a38fdc30963552.webp",
+          "image_file": "i_409f94b21d68d4255302023aef714d1f.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -945,7 +945,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 64,
-          "image_file": "i_54b7e170423478a2bcb32cfdb990cc2e.webp",
+          "image_file": "i_724015511de01365e767fb3e8290cd83.webp",
           "row_stride": 256,
           "width": 64
         },
@@ -1003,7 +1003,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_177663d336be5c25612a05480ff587e1.webp",
+          "image_file": "i_94dca8b9ff7e1f7fb8bad6de3a8e102e.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -1036,7 +1036,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_177663d336be5c25612a05480ff587e1.webp",
+          "image_file": "i_94dca8b9ff7e1f7fb8bad6de3a8e102e.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -1066,7 +1066,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_083e0db1c2d17fca8154112d2c379c41.webp",
+          "image_file": "i_2a66ee4322754c4a9c9645234e59d541.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -1165,7 +1165,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_de7ff52abb1c5da097217a818c694d75.webp",
+          "image_file": "i_0f3d79018a44162f74836cda3b756f77.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -1347,7 +1347,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 64,
-          "image_file": "i_26274ca7a9d5fc7606647c43ebfb3970.webp",
+          "image_file": "i_4a231f4782d532c9699e28e523505b95.webp",
           "row_stride": 256,
           "width": 64
         },
@@ -1380,7 +1380,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_36426fc35a7a8e57aa03d66d013d5e58.webp",
+          "image_file": "i_6ee9b4287e04853c7dd25b66970df65e.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -1457,7 +1457,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_3b52d8be3948f01cc28cc5d71db8d14b.webp",
+          "image_file": "i_8ec14cf9b8ed78bc0c9342a928931da5.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -1494,7 +1494,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 64,
-          "image_file": "i_d87dee15164f26ec31b65e0077202e95.webp",
+          "image_file": "i_7886f99ba3e4167b19a986f49f9daa5e.webp",
           "row_stride": 256,
           "width": 64
         },
@@ -1505,8 +1505,74 @@
         "urgency": "normal"
       },
       "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 216,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "⁨❤️⁩: реакция на ваше сообщение «⁨rate pls⁩»",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786265036642,
+        "icon": null,
+        "id": 267,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_8614ae07194da2d8817349b8fe854358.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786265030642,
+        "summary": "⁨🌙ラッザ(Moon)⁩ (⁨#🍙-ricing⁩, ⁨Noctalia⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 218,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "@everyone \nпиздец",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786265280524,
+        "icon": null,
+        "id": 268,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_c6013c6a99eefe780990cfc0fd0397d7.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786265271920,
+        "summary": "⁨litorg⁩ (⁨#чатик-general⁩, ⁨общение⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
     }
   ],
-  "next_id": 265,
+  "next_id": 269,
   "version": 2
 }
