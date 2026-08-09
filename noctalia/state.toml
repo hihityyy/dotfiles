@@ -1,3 +1,6 @@
+[screenshot]
+last_region = "867,323,281,227"
+
 [security_migrations]
 calendar_credentials_v1 = true
 

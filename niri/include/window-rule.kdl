@@ -18,7 +18,7 @@ window-rule {
           color "#00000040"
           inactive-color "#00000026"
     }
-    default-column-width { fixed 624; }
+    default-column-width { proportion 0.5; }
     open-fullscreen false
     background-effect {
           blur true
@@ -30,7 +30,7 @@ window-rule {
 
 window-rule {
     match app-id="firefox"
-    match app-id="obsidian"
+    match app-id="md.Obsidian"
     match app-id="io.github.elyprismlauncher.ElyPrismLauncher"
     match app-id="zen"
     match app-id="vesktop"
@@ -40,16 +40,13 @@ window-rule {
     match app-id="org.gnome.eog"
     match app-id="de.haeckerfelix.Fragments"
     match app-id="steam"
-    default-column-width { fixed 1260; }
+    default-column-width { proportion 1.0; }
 }
 window-rule {
     match app-id="org.telegram.desktop"
     match app-id="kitty"
     match app-id="nautilus"
-    default-column-width { fixed 836; }
+    default-column-width { proportion 0.66667; }
+
 }
-window-rule {
-    match app-id="scrcpy"
-    default-column-width { fixed 800; }
-    default-window-height { fixed 360; }
-}
+

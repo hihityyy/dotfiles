@@ -1,5 +1,5 @@
 --theme=noctalia
 --style=numbers
 --color=always
---wrap=auto
+--wrap=never
 --paging=never

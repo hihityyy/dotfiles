@@ -1,2 +1,3 @@
 spawn-at-startup "noctalia"
+spawn-at-startup "path/to/niri-kb-layout"
 prefer-no-csd

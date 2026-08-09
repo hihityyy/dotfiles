@@ -1,5 +1,5 @@
 {
-  "change_serial": 62,
+  "change_serial": 214,
   "entries": [
     {
       "active": false,
@@ -44,7 +44,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_566b1aea8adf4b9bb9dbd80df5397645.webp",
+          "image_file": "i_c86e0bf54635531a2a246223ac175b52.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -77,7 +77,7 @@
           "channels": 4,
           "has_alpha": true,
           "height": 96,
-          "image_file": "i_8601ec96861b4a30a7a9761efe43bf19.webp",
+          "image_file": "i_c86e0bf54635531a2a246223ac175b52.webp",
           "row_stride": 384,
           "width": 96
         },
@@ -241,7 +241,7 @@
         "timeout": 6000,
         "urgency": "normal"
       },
-      "seen": false
+      "seen": true
     },
     {
       "active": false,
@@ -263,7 +263,7 @@
         "timeout": 6000,
         "urgency": "normal"
       },
-      "seen": false
+      "seen": true
     },
     {
       "active": false,
@@ -285,9 +285,1228 @@
         "timeout": 6000,
         "urgency": "normal"
       },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 64,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785757278914,
+        "icon": null,
+        "id": 95,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785757272914,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 66,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785758293097,
+        "icon": null,
+        "id": 97,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785758287097,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 68,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785778570318,
+        "icon": null,
+        "id": 99,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785778564318,
+        "summary": "WARP Status",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 70,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "⁨@member⁩",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1785839091555,
+        "icon": null,
+        "id": 124,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_0d1d96d8cc290f7703f91aa119fee60d.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785839085555,
+        "summary": "⁨qamhieh⁩ (⁨#чатик-general⁩, ⁨общение⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 75,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "Поздравляем ⁨@hihityyy⁩! Ты достиг 2 уровня!",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1785843495116,
+        "icon": null,
+        "id": 127,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_311139e6f74f07c3e03bffcc2a60b884.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785843489116,
+        "summary": "⁨Akemi⁩ (⁨#чатик-general⁩, ⁨общение⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 80,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1785852175739,
+        "icon": null,
+        "id": 131,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785852169739,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 84,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1785852503695,
+        "icon": null,
+        "id": 133,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785852497695,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 86,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1785852699436,
+        "icon": null,
+        "id": 134,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785852693436,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 89,
+      "notification": {
+        "actions": [
+          "default",
+          "Open",
+          "mail-mark-read",
+          "Mark as read"
+        ],
+        "app_name": "Telegram Desktop",
+        "body": "📊 Банить ли гифки с младенцем?",
+        "category": "im.received",
+        "desktop_entry": "org.telegram.desktop",
+        "expiry_wall_ms": 1785857532519,
+        "icon": null,
+        "id": 135,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 64,
+          "image_file": "i_0f937295dfa5da7c62ceabf07a59a361.webp",
+          "row_stride": 256,
+          "width": 64
+        },
+        "origin": "external",
+        "received_wall_ms": 1785857526519,
+        "summary": "~/dotfiles",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 90,
+      "notification": {
+        "actions": [
+          "default",
+          "Open",
+          "mail-mark-read",
+          "Mark as read"
+        ],
+        "app_name": "Telegram Desktop",
+        "body": "Хоть и опрос нелегитимный из-за накрутки, младенцы будут жить. Младенец lives matter",
+        "category": "im.received",
+        "desktop_entry": "org.telegram.desktop",
+        "expiry_wall_ms": 1785857532520,
+        "icon": null,
+        "id": 136,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 64,
+          "image_file": "i_0f937295dfa5da7c62ceabf07a59a361.webp",
+          "row_stride": 256,
+          "width": 64
+        },
+        "origin": "external",
+        "received_wall_ms": 1785857526520,
+        "summary": "~/dotfiles",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 92,
+      "notification": {
+        "actions": [
+          "default",
+          "Open",
+          "mail-mark-read",
+          "Mark as read"
+        ],
+        "app_name": "Telegram Desktop",
+        "body": "GIF, ‎⁨https://github.com/iluaii/fwm⁩",
+        "category": "im.received",
+        "desktop_entry": "org.telegram.desktop",
+        "expiry_wall_ms": 1785858520100,
+        "icon": null,
+        "id": 137,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 64,
+          "image_file": "i_0f937295dfa5da7c62ceabf07a59a361.webp",
+          "row_stride": 256,
+          "width": 64
+        },
+        "origin": "external",
+        "received_wall_ms": 1785858514100,
+        "summary": "~/dotfiles",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 94,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1785917191866,
+        "icon": null,
+        "id": 166,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785917185866,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 96,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1785917340893,
+        "icon": null,
+        "id": 167,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785917334893,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 98,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1785917425071,
+        "icon": null,
+        "id": 168,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785917419071,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 103,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "⁨@Verified⁩",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1785918589113,
+        "icon": null,
+        "id": 171,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_0b18b43d083bd5a94da2da6edfb9f743.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785918583034,
+        "summary": "⁨Sonny⁩ (⁨#⚔️partner-ship⁩, ⁨Partnership⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 108,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "# One life. No revives. No takebacks :LegendaryHC: \n\n***Legendary Hardcore*** is a permanent deathban Hardcore SMP with no map resets, and no revives. So far in its **17 month history**, over 37,000 players have joined, and 19,000 have died trying to survive. This is a **public server** that you can join **RIGHT NOW!** \n\n**PvP, raiding, and griefing** is enabled across its massive 1mil x 1mil block map. Every step could be your last.\n\nThe server is **completely vanilla**, enhanced by plugins to improve the Hardcore experience. These include Player Heads, accessing dead players enderchests, Simple Voicechat, advanced player statistic tracking, and much more.\n\nMany legends have joined, forming bases and alliances that dominated the servers history, only to die, leaving a new spot for the next player to take over. All events on the server are **entirely unscripted and player-led**, creating genuine connections, conflict, and betrayal. \n\nMuch of the servers history can be found on our player-maintained wiki, incl",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1785943700756,
+        "icon": null,
+        "id": 177,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_ada877925f9d06bb5d5e5c92e6fb6946.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785943694756,
+        "summary": "⁨S3r3na⁩ (⁨#🤝︱partnerships⁩, ⁨◄ 𝗜𝗠𝗣𝗢𝗥𝗧𝗔𝗡𝗧 ►⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 110,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785943854468,
+        "icon": null,
+        "id": 178,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785943848468,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 112,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785945270892,
+        "icon": null,
+        "id": 179,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785945264892,
+        "summary": "WARP Status",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 114,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785945285008,
+        "icon": null,
+        "id": 180,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785945279008,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 116,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785945530771,
+        "icon": null,
+        "id": 181,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785945524681,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 122,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "⁨😭⁩: реакция на ваше изображение.",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1785954194252,
+        "icon": null,
+        "id": 185,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_1a244c7b872ac33370a38fdc30963552.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1785954188252,
+        "summary": "⁨♡lajanfem :3♡⁩ (⁨#🌙-noctalia⁩, ⁨Noctalia⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 124,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1785993530626,
+        "icon": null,
+        "id": 187,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1785993524626,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 128,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786028738835,
+        "icon": null,
+        "id": 190,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786028732835,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 132,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786032005976,
+        "icon": null,
+        "id": 192,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786031999976,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 134,
+      "notification": {
+        "actions": [],
+        "app_name": "Telegram Desktop",
+        "body": "Photo, ‎⁨🔥 ИИ-агент для любого ПК\n\nSkales — ИИ-агент, который получает доступ к файлам, браузеру, почте и календарю и выполняет сложные задачи в фоновом режиме. Сохраняет контекст, может выполнять команды по таймеру и поддерживает дистанционное управлени...",
+        "category": "im.received",
+        "desktop_entry": "org.telegram.desktop",
+        "expiry_wall_ms": 1786032666747,
+        "icon": null,
+        "id": 193,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 64,
+          "image_file": "i_54b7e170423478a2bcb32cfdb990cc2e.webp",
+          "row_stride": 256,
+          "width": 64
+        },
+        "origin": "external",
+        "received_wall_ms": 1786032660747,
+        "summary": "ИИ Представляет",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 142,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "Click here to restart",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786034191587,
+        "icon": null,
+        "id": 200,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786034185587,
+        "summary": "Vencord has been updated!",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 149,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "It looks like you can't set the bar color itself reading through https://docs.noctalia.dev/v5/bar/?section=bar-level-defaults#bar-level-defaults. The only color you can set is the foreground color of capsules",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786037665377,
+        "icon": null,
+        "id": 206,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_177663d336be5c25612a05480ff587e1.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786037659377,
+        "summary": "⁨Jiibus⁩ (⁨#🌙-noctalia⁩, ⁨CHAT⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 153,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "No, this one I made\nhttps://discord.com/channels/1401598189823590460/1465000359855522070/1534678564690071562",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786038777562,
+        "icon": null,
+        "id": 208,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_177663d336be5c25612a05480ff587e1.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786038771562,
+        "summary": "⁨Jiibus⁩ (⁨#🌙-noctalia⁩, ⁨CHAT⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 158,
+      "notification": {
+        "actions": [],
+        "app_name": "vesktop",
+        "body": "⁨:talialuv:⁩: реакция на ваше вложение.",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786084604111,
+        "icon": null,
+        "id": 219,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_083e0db1c2d17fca8154112d2c379c41.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786084598111,
+        "summary": "⁨Xinoxi⁩ (⁨#🖼️-wallpapers⁩, ⁨Noctalia⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 161,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786086625589,
+        "icon": null,
+        "id": 221,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786086619589,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 163,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786088710236,
+        "icon": null,
+        "id": 222,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786088703756,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 165,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786089325032,
+        "icon": null,
+        "id": 224,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786089319032,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 169,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "67 228 1488",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786089363414,
+        "icon": null,
+        "id": 226,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_de7ff52abb1c5da097217a818c694d75.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786089357241,
+        "summary": "leaver",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 171,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786090027363,
+        "icon": null,
+        "id": 227,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786090021276,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 175,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1786095285419,
+        "icon": null,
+        "id": 238,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786095279419,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 177,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1786095325923,
+        "icon": null,
+        "id": 239,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786095319923,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 179,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1786095363190,
+        "icon": null,
+        "id": 240,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786095357190,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 181,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1786095400888,
+        "icon": null,
+        "id": 241,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786095394888,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 183,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "LosslessCut",
+        "body": "Export finished",
+        "category": null,
+        "desktop_entry": "losslesscut",
+        "expiry_wall_ms": 1786095438439,
+        "icon": null,
+        "id": 242,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786095432439,
+        "summary": "LosslessCut",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": true
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 196,
+      "notification": {
+        "actions": [
+          "default",
+          "Open",
+          "mail-mark-read",
+          "Mark as read"
+        ],
+        "app_name": "Telegram Desktop",
+        "body": "Video, ‎⁨❗️ 90к скиллов для ИИ-агентов\n\nSkills Hub — каталог с 90684 готовыми навыками для ИИ-агентов под разные задачи. Каталог разбит на категории, есть удобный поиск, а к каждому скиллу добавлена подробная документация и инструкция по использованию\n\nПр...",
+        "category": "im.received",
+        "desktop_entry": "org.telegram.desktop",
+        "expiry_wall_ms": 1786120890460,
+        "icon": null,
+        "id": 248,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 64,
+          "image_file": "i_26274ca7a9d5fc7606647c43ebfb3970.webp",
+          "row_stride": 256,
+          "width": 64
+        },
+        "origin": "external",
+        "received_wall_ms": 1786120884460,
+        "summary": "ИИ Представляет",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 199,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "⁨:talialuv:⁩: реакция на ваше вложение.",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786121363513,
+        "icon": null,
+        "id": 249,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_36426fc35a7a8e57aa03d66d013d5e58.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786121357233,
+        "summary": "⁨wired⁩ (⁨#🖼️-wallpapers⁩, ⁨Noctalia⁩)",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 201,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Connected\nNetwork: healthy",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786183556857,
+        "icon": null,
+        "id": 250,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786183550857,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 203,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "Status update: Disconnected\nReason: Manual Disconnection",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786185810358,
+        "icon": null,
+        "id": 252,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1786185804358,
+        "summary": "WARP",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "closed_by_call",
+      "event_serial": 205,
+      "notification": {
+        "actions": [
+          "default",
+          "View"
+        ],
+        "app_name": "vesktop",
+        "body": "Ратка",
+        "category": null,
+        "desktop_entry": "vesktop",
+        "expiry_wall_ms": 1786190668518,
+        "icon": null,
+        "id": 253,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 96,
+          "image_file": "i_3b52d8be3948f01cc28cc5d71db8d14b.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786190662518,
+        "summary": "Lever",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 209,
+      "notification": {
+        "actions": [
+          "default",
+          "Open",
+          "mail-mark-read",
+          "Mark as read",
+          "inline-reply",
+          "Reply"
+        ],
+        "app_name": "Telegram Desktop",
+        "body": "push_conversation_create",
+        "category": "im.received",
+        "desktop_entry": "org.telegram.desktop",
+        "expiry_wall_ms": 1786191582434,
+        "icon": null,
+        "id": 255,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 64,
+          "image_file": "i_d87dee15164f26ec31b65e0077202e95.webp",
+          "row_stride": 256,
+          "width": 64
+        },
+        "origin": "external",
+        "received_wall_ms": 1786191576434,
+        "summary": "YOUGAME LOG BOT",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
       "seen": false
     }
   ],
-  "next_id": 94,
+  "next_id": 265,
   "version": 2
 }

@@ -4,6 +4,7 @@ binds {
     Super+I                                                 { spawn "kitty" "-e" "nvim"; }
  
     Super+X                                                 { spawn-sh "noctalia msg screenshot-region"; }
+    Super+Shift+X                                           { spawn-sh "noctalia msg screenshot-fullscreen"; }
     Super+Z                                                 { spawn-sh "noctalia msg panel-toggle control-center"; }
     Super+D                                                 { spawn-sh "noctalia msg panel-toggle launcher"; }
     Super+Shift+D                                           { spawn-sh "noctalia msg panel-toggle launcher /"; }

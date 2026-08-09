@@ -1,7 +1,4 @@
-config_version = 11
-
-[accessibility]
-ui_scale = 0.95000000670552254
+config_version = 12
 
 [backdrop]
 enabled = true
@@ -16,8 +13,8 @@ order = [ "default" ]
     color = "primary"
     end = [ "bluetooth", "volume", "keyboard_layout", "notifications", "tray" ]
     font_weight = 600
-    margin_edge = 10
-    margin_ends = 10
+    margin_edge = 8
+    margin_ends = 8
     panel_overlap = 0
     radius = 20
     scale = 1.1500000096857548
@@ -29,6 +26,8 @@ order = [ "default" ]
 
 [control_center]
 hidden_tabs = [ "monitor", "power", "bluetooth", "weather" ]
+show_shortcut_labels = false
+sidebar_section = "none"
 
     [[control_center.shortcuts]]
     type = "caffeine"
@@ -39,90 +38,116 @@ hidden_tabs = [ "monitor", "power", "bluetooth", "weather" ]
     [[control_center.shortcuts]]
     type = "clipboard"
 
+    [[control_center.shortcuts]]
+    type = "audio"
+
 [desktop_widgets]
-enabled = false
-
-[location]
-address = "Braslav, Belarus"
-
-[lockscreen]
-blurred_desktop = true
-
-[lockscreen_widgets]
-enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-0000000000000001", "lockscreen-widget-0000000000000003" ]
+widget_order = []
 
-    [lockscreen_widgets.grid]
+    [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
 
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.90999997965991497
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 300.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 600.0
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-0000000000000006", "lockscreen-widget-0000000000000007" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
     [lockscreen_widgets.widget."lockscreen-login-box@DVI-D-1"]
-    box_height = 70.0
-    box_width = 416.0
-    cx = 656.0
-    cy = 643.0
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 864.0
     output = "DVI-D-1"
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DVI-D-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface"
         background_opacity = 0.90000000000000002
-        background_radius = 16.0
+        background_radius = 20.0
         center_password_text = true
         input_opacity = 0.90000000000000002
-        input_radius = 0.0
-        layout = "compact"
-        show_caps_lock = false
-        show_keyboard_layout = false
-        show_login_button = false
+        input_radius = 20.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
         show_media = true
         show_session_buttons = true
         show_unlock_hint = false
-        show_weather = true
+        show_weather = false
 
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 144.0
-    box_width = 416.0
-    cx = 656.0
-    cy = 248.0
-    output = "DVI-D-1"
-    rotation = 0.0
-    type = "clock"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
-        background_opacity = 0.90000000000000002
-        center_text = true
-        clock_style = "digital"
-        color = "primary"
-        shadow = true
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
-    box_height = 96.0
-    box_width = 432.0
-    cx = 656.0
-    cy = 464.0
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 200.0
+    box_width = 376.0
+    cx = 632.0
+    cy = 524.0
     output = "DVI-D-1"
     rotation = -0.0
     type = "audio_visualizer"
 
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background = false
         background_opacity = 0.90000000000000002
+        background_radius = 20
         bands = 32
         centered = false
+        mirrored = true
         show_when_idle = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
+    box_height = 144.0
+    box_width = 384.0
+    cx = 632.0
+    cy = 694.0
+    output = "DVI-D-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000007.settings]
+        background_opacity = 0.90000000000000002
+        background_radius = 20
+        color = "primary"
+        shadow = false
 
 [notification]
 background_opacity = 0.89999997988343239
-border = false
 layer = "overlay"
 show_actions = false
 
 [osd]
 background_opacity = 0.89999997988343239
-border = false
 offset_y = 14
 position = "bottom_center"
 position_vertical = "bottom_center"
@@ -140,9 +165,10 @@ position_vertical = "bottom_center"
     wifi = false
 
 [plugin_settings."noctalia/screen_recorder"]
-filename_pattern = "record-%H-%M"
+filename_pattern = "record-%H:%M_%d.%m"
+replay_duration = 15
 replay_enabled = true
-replay_filename_pattern = "replay-%H-%M"
+replay_filename_pattern = "replay-%H:%M_%d.%m"
 show_cursor = false
 video_source = "focused"
 
@@ -164,9 +190,8 @@ icon_provider = "duckduckgo"
 links = [
     "Soundcloud|https://soundcloud.com/",
     "YouTube|https://youtube.com",
-    "Mail|https://mail.proton.me",
     "Reddit|https://reddit.com",
-    "Fear|https://fearproject.ru/",
+    "Mail|https://mail.proton.me",
     "GitHub|https://github.com"
 ]
 
@@ -189,17 +214,15 @@ enabled = [
 
 [shell]
 app_icon_color = "primary"
-button_borders = false
-card_borders = false
-corner_radius_scale = 1.9500000290572643
-font_family = "Inter"
-input_borders = false
+corner_radius_scale = 2.0
+font_family = "Adwaita Sans"
 niri_overview_type_to_launch_enabled = true
 panel_anchor_bar = "default"
 password_style = "random"
-popup_borders = false
+popup_shadows = false
 screen_time_enabled = true
 settings_show_advanced = false
+show_location = false
 
     [shell.animation]
     speed = 2.0000000298023224
@@ -237,8 +260,10 @@ Status	Show connection status
         label = "Cloudflare WARP"
         prefix = "warp"
 
+        [shell.launcher.providers.calculator]
+        global = true
+
     [shell.panel]
-    borders = false
     control_center_placement = "floating"
     control_center_position = "center"
     list_item_background = true
@@ -248,22 +273,21 @@ Status	Show connection status
     [shell.screenshot]
     confirm_region = true
     directory = "/home/hihity/Pictures/Screenshots"
-    filename_pattern = "screen-%H-%M"
+    filename_pattern = "screen-%H:%M_%d.%m"
+    remember_last_region = true
 
     [shell.shadow]
-    direction = "center"
+    direction = "down_left"
 
 [theme]
 builtin = "Noctalia"
 community_palette = "Oxocarbon"
-mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt" ]
     community_ids = [
-        "opencode",
         "pywalfox",
         "discord",
         "telegram",
@@ -272,7 +296,6 @@ wallpaper_scheme = "m3-content"
         "obsidian",
         "prismlauncher",
         "steam",
-        "obs",
         "papirus-icons",
         "bat",
         "lazygit",
@@ -311,4 +334,4 @@ type = "yuuto/arch-updater:widget"
 
 [widget.workspaces]
 focused_output_only = true
-show_labels = false
+style = "minimal"
