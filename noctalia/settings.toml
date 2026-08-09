@@ -12,7 +12,7 @@ order = [ "default" ]
     capsule_thickness = 0.10000000149011612
     color = "primary"
     end = [ "bluetooth", "volume", "keyboard_layout", "notifications", "tray" ]
-    font_weight = 600
+    font_weight = 700
     margin_edge = 8
     margin_ends = 8
     panel_overlap = 0
@@ -54,6 +54,9 @@ widget_order = []
 
 [dock]
 background_opacity = 0.90999997965991497
+
+[hooks]
+wallpaper_changed = "killall xdg-desktop-portal-gtk xdg-desktop-portal"
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -158,13 +161,13 @@ position_vertical = "bottom_center"
     keyboard_backlight = false
     keyboard_layout = false
     lock_keys = false
-    media = false
     nightlight = false
     power_profile = false
     privacy = false
     wifi = false
 
 [plugin_settings."noctalia/screen_recorder"]
+directory = "/home/hihity/media/videos/recordings"
 filename_pattern = "record-%H:%M_%d.%m"
 replay_duration = 15
 replay_enabled = true
@@ -272,7 +275,7 @@ Status	Show connection status
 
     [shell.screenshot]
     confirm_region = true
-    directory = "/home/hihity/Pictures/Screenshots"
+    directory = "/home/hihity/media/pictures/screenshots/Screen time"
     filename_pattern = "screen-%H:%M_%d.%m"
     remember_last_region = true
 
@@ -283,19 +286,21 @@ Status	Show connection status
 builtin = "Noctalia"
 community_palette = "Oxocarbon"
 source = "wallpaper"
-wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt" ]
     community_ids = [
         "pywalfox",
+        "pywalfox-beta4",
         "discord",
         "telegram",
         "driftwm",
         "neovim",
         "obsidian",
+        "zed",
         "prismlauncher",
         "steam",
+        "fastfetch",
         "papirus-icons",
         "bat",
         "lazygit",
@@ -303,6 +308,7 @@ wallpaper_scheme = "m3-content"
     ]
 
 [wallpaper]
+directory = "/home/hihity/media/pictures/wallpapers"
 fill_color = "on_secondary"
 transition = [ "fade" ]
 
@@ -310,16 +316,20 @@ transition = [ "fade" ]
     recursive = false
 
     [wallpaper.default]
-    path = "/home/hihity/Pictures/Wallpapers/i-01.png"
+    path = "/home/hihity/media/pictures/wallpapers/i-07.png"
 
     [wallpaper.last]
-    path = "/home/hihity/Pictures/Wallpapers/i-01.png"
+    path = "/home/hihity/media/pictures/wallpapers/i-07.png"
 
     [wallpaper.monitors.DVI-D-1]
-    path = "/home/hihity/Pictures/Wallpapers/i-01.png"
+    path = "/home/hihity/media/pictures/wallpapers/i-07.png"
 
 [weather]
 enabled = false
+
+[widget.audio_visualizer]
+scale = 2.5
+scroll_repeat = "steps"
 
 [widget.battery]
 enabled = false
