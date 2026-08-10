@@ -18,6 +18,7 @@ binds {
     Super+Shift+B                                           { spawn-sh "noctalia msg session lock-and-suspend"; }
     Super+Comma                                             { spawn-sh "noctalia msg settings-toggle"; }
     Super+TaB                                               { spawn-sh "noctalia msg window-switcher"; }
+    Alt+Tab                                                 { spawn-sh "noctalia msg window-switcher"; }
 
     XF86AudioRaiseVolume                                    { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume                                    { spawn-sh "noctalia msg volume-down"; }
