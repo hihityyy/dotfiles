@@ -1,0 +1,7 @@
+[catalog.fzf]
+name     = "fzf"
+category = "terminal"
+
+[templates.fzf]
+input_path  = "fzf.conf"
+output_path = "$XDG_CONFIG_HOME/fzf/noctalia.conf"
