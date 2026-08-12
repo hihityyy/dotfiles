@@ -21,6 +21,7 @@ prepend_keymap = [
   { on = ["g", "d"], run = "cd ~/downloads",         desc = "Go to downloads" },
   { on = ["g", "p"], run = "cd ~/projects",          desc = "Go to projects" },
   { on = ["g", "r"], run = "cd /",                   desc = "Go to root" },
+  { on = ["g", "z"], run = "plugin zoxide", desc = "Zoxide jump" },
   { on = ["g", "<Space>"], run = "cd --interactive", desc = "Go to (manual path)" },
 
   { on = "y", run = "yank",                          desc = "Yank (copy)" },
@@ -35,6 +36,11 @@ prepend_keymap = [
   { on = ["c", "p"], run = "copy path",     desc = "Copy full path" },
   { on = ["c", "d"], run = "copy dirname",  desc = "Copy directory" },
   { on = ["c", "f"], run = "copy filename", desc = "Copy filename" },
+ 
+  { on = "C", run = "plugin chmod", desc = "Chmod on selected files" },
+
+  { on = ["z", "z"], run = "plugin compress", desc = "Archive as zip" },
+  { on = ["z", "t"], run = "plugin compress '-e .tar.gz'", desc = "Archive as tar.gz"},
 
   { on = "/", run = "find --smart",              desc = "Find" },
   { on = "n", run = "find_arrow",                desc = "Next match" },

@@ -11,7 +11,7 @@ binds {
     Super+Shift+D     { spawn-sh "noctalia msg panel-toggle launcher /"; }
     Super+W           { spawn-sh "noctalia msg panel-toggle launcher '/wall '"; }
     Super+T           { spawn-sh "noctalia msg panel-toggle launcher '/web '"; }
-    Super+R           { spawn-sh "noctalia msg panel-toggle launcher /rec"; }
+    Super+R           { spawn-sh "noctalia msg panel-toggle launcher '/rec '"; }
     Super+Escape      { spawn-sh "noctalia msg panel-toggle session"; }
     Super+B           { spawn-sh "noctalia msg session lock"; }
     Super+Shift+B     { spawn-sh "noctalia msg session lock-and-suspend"; }

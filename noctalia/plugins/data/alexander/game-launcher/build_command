@@ -1,0 +1,1 @@
+cc -o /home/hihity/.local/state/noctalia/plugins/materialized/community/game-launcher/gamelauncher /home/hihity/.local/state/noctalia/plugins/materialized/community/game-launcher/gamelauncher.c /home/hihity/.local/state/noctalia/plugins/materialized/community/game-launcher/sqlite_reader.c

@@ -1,4 +1,5 @@
-
+[status]
+overall = { bold = true }
 [flavor]
 dark = "noctalia"
 light = "noctalia"

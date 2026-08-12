@@ -3,29 +3,106 @@
   "logo": {
     "source": "~/.config/fastfetch/hihitylogo.txt",
     "position": "left",
-    "color": { "1": "blue" },
-    "padding": { "top": 1, "right": 2 }
+    "padding": {
+      "top": 1,
+      "right": 2
+    },
+    "color": {
+      "1": "#eb63d6",
+      "2": "#d663ca"
+    }
   },
   "display": {
     "separator": " ",
-    "color": { "keys": "cyan" },
-    "disableLinewrap": true
+    "color": {
+      "keys": "#ebc2d6",
+      "title": "#d6c1ca"
+    },
+    "disableLinewrap": true,
+    "percent": {
+      "color": {
+        "green": "#f5c2b0",
+        "yellow": "#e4bbcf",
+        "red": "#ffb4ab"
+      }
+    }
   },
   "modules": [
-    { "type": "title", "format": "{user-name}@{host-name}/" },
-
-    { "type": "custom", "key":   "├─ system/", "keyColor": "blue", "format": "" },
-    { "type": "os", "key":       "│  ├─  OS", "keyColor": "blue", "format": "Arch Linux" },
-    { "type": "kernel", "key":   "│  ├─  Kernel", "keyColor": "blue", "format": "{2}" },
-    { "type": "uptime", "key":   "│  └─  Uptime", "keyColor": "blue" },
-    { "type": "custom", "key":   "├─ shell/", "keyColor": "green", "format": "" },
-    { "type": "shell", "key":    "│  ├─ 󰆍 Shell", "keyColor": "green" },
-    { "type": "wm", "key":       "│  ├─ 󱂬 WM", "keyColor": "green" },
-    { "type": "terminal", "key": "│  └─  Term", "keyColor": "green" },
-    { "type": "custom", "key":   "└─ hardware/", "keyColor": "yellow", "format": "" },
-    { "type": "cpu", "key":      "   ├─  CPU", "keyColor": "yellow", "format": "{1}" },
-    { "type": "gpu", "key":      "   ├─ 󰢮 GPU", "keyColor": "yellow", "format": "{2}" },
-    { "type": "memory", "key":   "   ├─  RAM", "keyColor": "yellow" },
-    { "type": "disk", "key":     "   └─  Disk", "keyColor": "yellow" }
+    {
+      "type": "title",
+      "format": "{user-name}@{host-name}/"
+    },
+    {
+      "type": "custom",
+      "key": "├─ system/",
+      "keyColor": "blue",
+      "format": ""
+    },
+    {
+      "type": "os",
+      "key": "│  ├─  OS",
+      "keyColor": "blue",
+      "format": "Arch Linux"
+    },
+    {
+      "type": "kernel",
+      "key": "│  ├─  Kernel",
+      "keyColor": "blue",
+      "format": "{2}"
+    },
+    {
+      "type": "uptime",
+      "key": "│  └─  Uptime",
+      "keyColor": "blue"
+    },
+    {
+      "type": "custom",
+      "key": "├─ shell/",
+      "keyColor": "green",
+      "format": ""
+    },
+    {
+      "type": "shell",
+      "key": "│  ├─ 󰆍 Shell",
+      "keyColor": "green"
+    },
+    {
+      "type": "wm",
+      "key": "│  ├─ 󱂬 WM",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminal",
+      "key": "│  └─  Term",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "key": "└─ hardware/",
+      "keyColor": "yellow",
+      "format": ""
+    },
+    {
+      "type": "cpu",
+      "key": "   ├─  CPU",
+      "keyColor": "yellow",
+      "format": "{1}"
+    },
+    {
+      "type": "gpu",
+      "key": "   ├─ 󰢮 GPU",
+      "keyColor": "yellow",
+      "format": "{2}"
+    },
+    {
+      "type": "memory",
+      "key": "   ├─  RAM",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "disk",
+      "key": "   └─  Disk",
+      "keyColor": "yellow"
+    }
   ]
 }

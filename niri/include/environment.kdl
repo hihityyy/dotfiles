@@ -7,5 +7,6 @@ environment {
     NIRI_DISABLE_SECONDARY_SELECTION_SYNC "1"
     QT_QPA_PLATFORMTHEME "qt6ct"
     QT_FILESYSTEM_REGISTRY "xdgdesktopportal"
+    QT_QPA_PLATFORM "wayland;xcb"
     FZF_DEFAULT_OPTS_FILE "/home/hihity/.config/fzf/noctalia.conf"
 }

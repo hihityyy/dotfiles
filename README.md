@@ -4,7 +4,7 @@ My personal configuration files for Arch Linux with the [Niri](https://github.co
 
 ## Contents
 
-[Structure](#structure) · [Dependencies](#dependencies) · [Niri-kb-layout](#niri-kb-layout) · [Fish setup](#fish-setup) · [Wallpapers](#wallpapers)
+[Structure](#structure) · [Dependencies](#dependencies) · [Niri-kb-layout](#niri-kb-layout) · [Fish setup](#fish-setup)
 
 ## Structure
 
@@ -170,6 +170,3 @@ If tide needs reconfiguring afterwards:
 tide configure
 ```
 
-## Wallpapers
-
-[![preview](./preview.png)](./preview.png)

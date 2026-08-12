@@ -1,9 +1,9 @@
 [screenshot]
-last_region = "885,84,383,116"
+last_region = "65,975,128,47"
 
 [security_migrations]
 calendar_credentials_v1 = true
 
 [wallpaper_panel]
-flatten = true
-sort = "name_asc"
+flatten = false
+sort = "date_asc"
