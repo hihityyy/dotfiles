@@ -9,16 +9,17 @@ order = [ "default" ]
     [bar.default]
     background_opacity = 0.89999997988343239
     border = "primary"
-    capsule_thickness = 0.10000000149011612
+    capsule_radius = 12
+    capsule_thickness = 0.79999998584389687
     color = "primary"
-    end = [ "bluetooth", "volume", "keyboard_layout", "notifications", "tray" ]
+    end = [ "bluetooth", "volume", "keyboard_layout", "notifications", "tray", "session" ]
     font_weight = 700
     margin_edge = 8
     margin_ends = 8
     panel_overlap = 0
     scale = 1.1500000096857548
     shadow = false
-    start = [ "workspaces", "widget_2", "sysmon" ]
+    start = [ "text_2", "workspaces", "sysmon" ]
     thickness = 32
     widget_spacing = 8
 
@@ -85,7 +86,7 @@ address = "Belarus,Akhrëmovtsy"
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-0000000000000006", "lockscreen-widget-0000000000000007" ]
+widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-0000000000000007" ]
 
     [lockscreen_widgets.grid]
     cell_size = 8
@@ -96,7 +97,7 @@ widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-000000000000
     box_height = 196.0
     box_width = 810.0
     cx = 640.0
-    cy = 864.0
+    cy = 718.0
     output = "DVI-D-1"
     rotation = 0.0
     type = "login_box"
@@ -115,31 +116,13 @@ widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-000000000000
         show_media = true
         show_session_buttons = true
         show_unlock_hint = false
-        show_weather = false
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
-    box_height = 200.0
-    box_width = 376.0
-    cx = 632.0
-    cy = 524.0
-    output = "DVI-D-1"
-    rotation = -0.0
-    type = "audio_visualizer"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
-        background = false
-        background_opacity = 0.90000000000000002
-        background_radius = 20
-        bands = 32
-        centered = false
-        mirrored = true
-        show_when_idle = true
+        show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
     box_height = 144.0
     box_width = 384.0
-    cx = 632.0
-    cy = 694.0
+    cx = 656.0
+    cy = 548.0
     output = "DVI-D-1"
     rotation = 0.0
     type = "clock"
@@ -242,7 +225,7 @@ password_style = "random"
 polkit_agent = true
 popup_shadows = false
 screen_time_enabled = true
-settings_show_advanced = false
+show_location = false
 
     [shell.greeter_sync]
     auto_sync = true
@@ -280,14 +263,16 @@ Status	Show connection status
         label = "Cloudflare WARP"
         prefix = "warp"
 
-        [shell.launcher.providers.wallpaper]
-        prefix = ""
-
     [shell.panel]
     clipboard_placement = "attached"
     control_center_position = "center"
     launcher_placement = "attached"
     list_item_background = true
+    open_near_click_clipboard = true
+    open_near_click_control_center = true
+    open_near_click_launcher = true
+    open_near_click_session = true
+    open_near_click_wallpaper = true
     polkit_placement = "attached"
     shadow = false
     wallpaper_position = "center"
@@ -309,13 +294,14 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt", "starship" ]
     community_ids = [
         "pywalfox",
         "pywalfox-beta4",
         "discord",
         "telegram",
         "driftwm",
+        "micro",
         "neovim",
         "obsidian",
         "zed",
@@ -337,13 +323,13 @@ transition = [ "fade" ]
     recursive = false
 
     [wallpaper.default]
-    path = "/home/hihity/media/pictures/wallpapers/anime/a-12.png"
+    path = "/home/hihity/media/pictures/wallpapers/anime/a-05.png"
 
     [wallpaper.last]
-    path = "/home/hihity/media/pictures/wallpapers/anime/a-12.png"
+    path = "/home/hihity/media/pictures/wallpapers/anime/a-05.png"
 
     [wallpaper.monitors.DVI-D-1]
-    path = "/home/hihity/media/pictures/wallpapers/anime/a-12.png"
+    path = "/home/hihity/media/pictures/wallpapers/anime/a-05.png"
 
 [widget.audio_visualizer]
 scale = 2.5
@@ -352,8 +338,39 @@ scroll_repeat = "steps"
 [widget.battery]
 enabled = false
 
+[widget.clock]
+capsule = true
+capsule_padding = 2
+capsule_radius = 14
+scroll_repeat = "steps"
+
+[widget.session]
+capsule = true
+capsule_border = "error"
+capsule_fill = "error"
+capsule_foreground = "error"
+capsule_radius = 12
+color = "surface"
+font_family = "Adwaita Sans"
+font_weight = 1000
+
 [widget.sysmon]
+custom_image_colorize = true
 stat = "ram_used"
+
+[widget.text_2]
+capsule = true
+capsule_border = "primary"
+capsule_fill = "primary"
+capsule_radius = 12
+color = "surface"
+icon_color = "tertiary"
+text = "󰣇"
+type = "text"
+
+    [widget.text_2.actions]
+    left = "panel-toggle clipboard"
+    right = "panel-toggle control-center screen-time"
 
 [widget.tray]
 drawer = true
@@ -364,10 +381,8 @@ match_adjacent_spacing = true
 [widget.widget]
 type = "yuuto/arch-updater:widget"
 
-[widget.widget_2]
-type = "oldirtty/color_picker:widget"
-
 [widget.workspaces]
-empty_color = "on_secondary"
+capsule = true
+empty_color = "outline"
 focused_output_only = true
 style = "minimal"
