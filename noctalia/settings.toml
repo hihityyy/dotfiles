@@ -12,22 +12,44 @@ order = [ "default" ]
     capsule_radius = 12
     capsule_thickness = 0.79999998584389687
     color = "primary"
-    end = [ "bluetooth", "volume", "keyboard_layout", "notifications", "tray", "session" ]
+    end = [ "group:g2", "group:g1", "session" ]
     font_weight = 700
     margin_edge = 8
     margin_ends = 8
     panel_overlap = 0
     scale = 1.1500000096857548
     shadow = false
-    start = [ "text_2", "workspaces", "sysmon" ]
+    start = [ "text_2", "clock_2", "workspaces" ]
     thickness = 32
     widget_spacing = 8
 
-        [bar.default.dead_zone.actions]
-        right = "none"
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "hover"
+        id = "g1"
+        members = [ "notifications", "tray" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 12.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "volume", "keyboard_layout" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 12.0
 
 [control_center]
 hidden_tabs = [ "monitor", "power", "bluetooth" ]
+
+    [control_center.calendar]
+    show_events_card = false
 
     [[control_center.shortcuts]]
     type = "caffeine"
@@ -37,6 +59,9 @@ hidden_tabs = [ "monitor", "power", "bluetooth" ]
 
     [[control_center.shortcuts]]
     type = "clipboard"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
 
 [desktop_widgets]
 schema_version = 2
@@ -53,9 +78,11 @@ widget_order = []
 background_opacity = 0.89999997988343239
 icon_size = 32
 layer = "overlay"
-position = "right"
 radius = 12
+reserve_space = false
 shadow = false
+show_instance_count = false
+smart_auto_hide = true
 
 [hooks]
 colors_changed = "killall xdg-desktop-portal-gtk xdg-desktop-portal"
@@ -79,6 +106,12 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     action = "screen_off"
     enabled = true
     timeout = 600.0
+
+[keybinds]
+down = [ "Down", "Ctrl+j" ]
+left = [ "Left", "Ctrl+h" ]
+right = [ "Right", "Ctrl+l" ]
+up = [ "Up", "Ctrl+k" ]
 
 [location]
 address = "Belarus,Akhrëmovtsy"
@@ -119,10 +152,10 @@ widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-000000000000
         show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
-    box_height = 144.0
-    box_width = 384.0
+    box_height = 136.0
+    box_width = 360.0
     cx = 656.0
-    cy = 548.0
+    cy = 552.0
     output = "DVI-D-1"
     rotation = 0.0
     type = "clock"
@@ -134,8 +167,9 @@ widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-000000000000
         shadow = false
 
 [nightlight]
-temperature_day = 7400
-temperature_night = 5700
+enabled = true
+temperature_day = 6000
+temperature_night = 6000
 
 [notification]
 background_opacity = 0.89999997988343239
@@ -159,9 +193,27 @@ position_vertical = "bottom_center"
     privacy = false
     wifi = false
 
+[plugin_settings."alexander/game-launcher"]
+heroic_enabled = false
+lutris_enabled = false
+
+[plugin_settings."imjustdoingmypart/niri-animations"]
+docked_open_near_click = true
+include_prefix = "../presets"
+picker_open_near_click = true
+picker_placement = "attached"
+presets_dir = "~/.config/niri/presets"
+target_file = "~/.config/niri/include/animations.kdl"
+
+[plugin_settings."noctalia/notes"]
+notes_dir = "/home/hihity/media/documents/notes"
+panel_open_near_click = true
+panel_placement = "attached"
+
 [plugin_settings."noctalia/screen_recorder"]
 directory = "/home/hihity/media/videos/recordings"
 filename_pattern = "record-%H:%M_%d.%m"
+frame_rate = 75
 replay_duration = 15
 replay_enabled = true
 replay_filename_pattern = "replay-%H:%M_%d.%m"
@@ -212,13 +264,15 @@ enabled = [
     "radimous/prismlauncher-instances",
     "noctalia/translator",
     "whyoolw/dropwall",
-    "alexander/game-launcher"
+    "alexander/game-launcher",
+    "noctalia/notes",
+    "imjustdoingmypart/niri-animations"
 ]
 
 [shell]
 app_icon_color = "primary"
 corner_radius_scale = 2.0
-font_family = "Adwaita Sans"
+font_family = "Inter"
 niri_overview_type_to_launch_enabled = true
 panel_anchor_bar = "default"
 password_style = "random"
@@ -283,12 +337,15 @@ Status	Show connection status
     filename_pattern = "screen-%H:%M_%d.%m"
     remember_last_region = true
 
+    [shell.session]
+    show_shortcuts = false
+
     [shell.shadow]
     direction = "down_left"
 
 [theme]
 builtin = "Noctalia"
-community_palette = "ADW"
+community_palette = "Lilac AMOLED"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
@@ -308,6 +365,7 @@ wallpaper_scheme = "m3-content"
         "prismlauncher",
         "steam",
         "fastfetch",
+        "obs",
         "papirus-icons",
         "bat",
         "fzf",
@@ -323,13 +381,13 @@ transition = [ "fade" ]
     recursive = false
 
     [wallpaper.default]
-    path = "/home/hihity/media/pictures/wallpapers/anime/a-05.png"
+    path = "/home/hihity/media/pictures/wallpapers/o-07.png"
 
     [wallpaper.last]
-    path = "/home/hihity/media/pictures/wallpapers/anime/a-05.png"
+    path = "/home/hihity/media/pictures/wallpapers/o-07.png"
 
     [wallpaper.monitors.DVI-D-1]
-    path = "/home/hihity/media/pictures/wallpapers/anime/a-05.png"
+    path = "/home/hihity/media/pictures/wallpapers/o-07.png"
 
 [widget.audio_visualizer]
 scale = 2.5
@@ -339,10 +397,20 @@ scroll_repeat = "steps"
 enabled = false
 
 [widget.clock]
-capsule = true
+capsule_fill = "hover"
 capsule_padding = 2
 capsule_radius = 14
-scroll_repeat = "steps"
+
+[widget.clock_2]
+capsule = true
+capsule_fill = "hover"
+color = "surface"
+format = "{:%a}, {:%b %d }"
+type = "clock"
+
+[widget.notifications]
+color = "surface"
+icon_color = "surface"
 
 [widget.session]
 capsule = true
@@ -351,8 +419,6 @@ capsule_fill = "error"
 capsule_foreground = "error"
 capsule_radius = 12
 color = "surface"
-font_family = "Adwaita Sans"
-font_weight = 1000
 
 [widget.sysmon]
 custom_image_colorize = true
@@ -370,19 +436,23 @@ type = "text"
 
     [widget.text_2.actions]
     left = "panel-toggle clipboard"
-    right = "panel-toggle control-center screen-time"
+    right = "panel-toggle imjustdoingmypart/niri-animations:docked"
 
 [widget.tray]
+color = "surface"
 drawer = true
 drawer_columns = 5
 drawer_item_size = 20.0
-match_adjacent_spacing = true
+
+[widget.weather]
+capsule_border = "tertiary"
+capsule_fill = "hover"
+show_condition = false
 
 [widget.widget]
 type = "yuuto/arch-updater:widget"
 
 [widget.workspaces]
 capsule = true
-empty_color = "outline"
-focused_output_only = true
+change_color_on_hover = false
 style = "minimal"

@@ -1,7 +1,6 @@
 binds {
     Super+Return      { spawn "kitty"; }
     Super+E           { spawn "kitty" "-e" "yazi"; }
-    Super+Shift+E     { spawn "nautilus"; }
     Super+I           { spawn "kitty" "-e" "nvim"; }
  
     Super+X           { spawn-sh "noctalia msg screenshot-region"; }
@@ -15,6 +14,7 @@ binds {
     Super+Escape      { spawn-sh "noctalia msg panel-toggle session"; }
     Super+B           { spawn-sh "noctalia msg session lock"; }
     Super+Shift+B     { spawn-sh "noctalia msg session lock-and-suspend"; }
+    Super+N           { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
     Super+Comma       { spawn-sh "noctalia msg settings-open"; }
     Super+TaB         { spawn-sh "noctalia msg window-switcher"; }
     Alt+Tab           { spawn-sh "noctalia msg window-switcher"; }

@@ -2,3 +2,19 @@ layer-rule {
   match namespace="^noctalia-backdrop"
   place-within-backdrop true
 }
+
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+  background-effect {
+    //xray false
+    //blur false
+  }
+}
+
+layer-rule {
+    match namespace="noctalia-window-switcher"
+    background-effect {
+        //blur true
+        //xray false
+    }
+}
