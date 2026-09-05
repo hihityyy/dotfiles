@@ -37,7 +37,6 @@ include "./include/animations.kdl"
 include "./include/hotkey-overlay.kdl"
 include "./include/debug.kdl"
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/media/pictures/screenshots/%Y-%m-%d_%H-%M-%S.png"
 
 include "./noctalia.kdl"
-

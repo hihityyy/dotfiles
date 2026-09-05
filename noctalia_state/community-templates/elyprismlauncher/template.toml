@@ -1,0 +1,7 @@
+[catalog.elyprismlauncher]
+name = "elyprism launcher"
+category = "gaming"
+
+[templates.elyprismlauncher]
+input_path = 'elyprismlauncher.json'
+output_path = '$XDG_DATA_HOME/ElyPrismLauncher/themes/Matugen/theme.json'

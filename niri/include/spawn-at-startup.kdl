@@ -1,3 +1,5 @@
 spawn-at-startup "noctalia"
 spawn-at-startup "niri-kb-layout"
+spawn-at-startup "oniri" "--tiling-layout"
+spawn-at-startup "start.sh"
 prefer-no-csd

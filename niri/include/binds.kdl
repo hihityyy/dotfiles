@@ -2,9 +2,10 @@ binds {
     Super+Return      { spawn "kitty"; }
     Super+E           { spawn "kitty" "-e" "yazi"; }
     Super+I           { spawn "kitty" "-e" "nvim"; }
- 
-    Super+X           { spawn-sh "noctalia msg screenshot-region"; }
-    Super+Shift+X     { spawn-sh "noctalia msg screenshot-fullscreen"; }
+    Super+U           { spawn "nautilus"; }
+    Super+X           { screenshot; }
+    Super+Shift+X     { screenshot-screen; }
+
     Super+Z           { spawn-sh "noctalia msg panel-toggle control-center"; }
     Super+D           { spawn-sh "noctalia msg panel-toggle launcher"; }
     Super+Shift+D     { spawn-sh "noctalia msg panel-toggle launcher /"; }
@@ -14,15 +15,17 @@ binds {
     Super+Escape      { spawn-sh "noctalia msg panel-toggle session"; }
     Super+B           { spawn-sh "noctalia msg session lock"; }
     Super+Shift+B     { spawn-sh "noctalia msg session lock-and-suspend"; }
-    Super+N           { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
+    Super+N           { spawn-sh "noctalia msg panel-toggle imjustdoingmypart/niri-animations:docked"; }
+    Super+Shift+N     { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
     Super+Comma       { spawn-sh "noctalia msg settings-open"; }
     Super+TaB         { spawn-sh "noctalia msg window-switcher"; }
     Alt+Tab           { spawn-sh "noctalia msg window-switcher"; }
+    Super+Shift+C     { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Super+P           { spawn-sh "noctalia msg media toggle"; }
 
     XF86AudioRaiseVolume     { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume     { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute            { spawn-sh "noctalia msg volume-mute"; }
-    Super+P                  { spawn-sh "noctalia msg media toggle"; }
 
     Super+Q           { close-window; }
     Super+F           { fullscreen-window; }
@@ -38,14 +41,15 @@ binds {
     Super+Shift+A     { switch-preset-window-height-back; }
     Super+C           { center-column; }
 
-    Super+H              { focus-column-left; }
-    Super+L              { focus-column-right; }
-    Super+Home           { focus-column-first; }
-    Super+End            { focus-column-last; }
-    Super+Shift+Home     { move-column-to-first; }
-    Super+Shift+End      { move-column-to-last; }
-    Super+J              { focus-window-or-workspace-down; }
-    Super+K              { focus-window-or-workspace-up; }
+    Super+H     { focus-column-left; }
+    Super+L     { focus-column-right; }
+    Super+J     { focus-window-or-workspace-down; }
+    Super+K     { focus-window-or-workspace-up; }
+
+    Super+Left      { focus-column-left; }
+    Super+Right     { focus-column-right; }
+    Super+Up        { focus-window-or-workspace-up; }
+    Super+Down      { focus-window-or-workspace-down; }
 
     Super+WheelScrollDown          cooldown-ms=150     { focus-column-right; }
     Super+WheelScrollUp            cooldown-ms=150     { focus-column-left; }
@@ -57,6 +61,11 @@ binds {
     Super+Shift+J     { move-window-down-or-to-workspace-down; }
     Super+Shift+K     { move-window-up-or-to-workspace-up; }
 
+    Super+Shift+Left      { move-column-left; }
+    Super+Shift+Right     { move-column-right; }
+    Super+Shift+Up        { move-window-up-or-to-workspace-up; }
+    Super+Shift+Down      { move-window-down-or-to-workspace-down; }
+
     Super+Shift+WheelScrollUp        cooldown-ms=150     { move-column-left; }
     Super+Shift+WheelScrollDown      cooldown-ms=150     { move-column-right; }
     Super+Shift+Ctrl+WheelScrollDown cooldown-ms=150     { move-window-down-or-to-workspace-down; }
@@ -66,4 +75,34 @@ binds {
     Super+Ctrl+L     { consume-or-expel-window-right; }
     Super+Ctrl+J     { move-workspace-down; }
     Super+Ctrl+K     { move-workspace-up; }
+ 
+    Super+Ctrl+Left      { consume-or-expel-window-left; }
+    Super+Ctrl+Right     { consume-or-expel-window-right; }
+    Super+Ctrl+Up        { move-workspace-up; }
+    Super+Ctrl+Down      { move-workspace-down; }
+
+    Super+Home           { focus-column-first; }
+    Super+End            { focus-column-last; }
+    Super+Shift+Home     { move-column-to-first; }
+    Super+Shift+End      { move-column-to-last; }
+
+    Super+1     { focus-workspace 1; }
+    Super+2     { focus-workspace 2; }
+    Super+3     { focus-workspace 3; }
+    Super+4     { focus-workspace 4; }
+    Super+5     { focus-workspace 5; }
+    Super+6     { focus-workspace 6; }
+    Super+7     { focus-workspace 7; }
+    Super+8     { focus-workspace 8; }
+    Super+9     { focus-workspace 9; }
+
+    Super+Shift+1     { move-window-to-workspace 1; }
+    Super+Shift+2     { move-window-to-workspace 2; }
+    Super+Shift+3     { move-window-to-workspace 3; }
+    Super+Shift+4     { move-window-to-workspace 4; }
+    Super+Shift+5     { move-window-to-workspace 5; }
+    Super+Shift+6     { move-window-to-workspace 6; }
+    Super+Shift+7     { move-window-to-workspace 7; }
+    Super+Shift+8     { move-window-to-workspace 8; }
+    Super+Shift+9     { move-window-to-workspace 9; }
 }

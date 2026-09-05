@@ -10,39 +10,39 @@ linemode       = "size"
 
 [opener]
 edit = [
-  { run = 'nvim "$@"', block = true, desc = "Neovim" },
+  { run = 'nvim %s', block = true, desc = "Neovim" },
 ]
 image = [
-  { run = 'eog "$@"', orphan = true, desc = "Eye of GNOME" },
+  { run = 'eog %s', orphan = true, desc = "Eye of GNOME" },
 ]
 video = [
-  { run = 'celluloid "$@"', orphan = true, desc = "Celluloid" },
+  { run = 'celluloid %s', orphan = true, desc = "Celluloid" },
 ]
 audio = [
-  { run = 'lollypop -f "$@"', orphan = true, desc = "Lollypop" },
-  { run = 'celluloid "$@"', orphan = true, desc = "Celluloid" },
+  { run = 'lollypop -f %s', orphan = true, desc = "Lollypop" },
+  { run = 'celluloid %s', orphan = true, desc = "Celluloid" },
 ]
 pdf = [
-  { run = 'evince "$@"', orphan = true, desc = "Evince" },
+  { run = 'evince %s', orphan = true, desc = "Evince" },
 ]
 open = [
-  { run = 'xdg-open "$@"', orphan = true, desc = "Open (xdg)" },
+  { run = 'xdg-open %s', orphan = true, desc = "Open (xdg)" },
 ]
 extract = [
-  { run = 'ya pub extract --list "$@"', desc = "Extract here" },
+  { run = 'ya pub extract --list %s', desc = "Extract here" },
 ]
 
 [open]
 rules = [
-  { mime = "image/*",          use = "image" },
-  { mime = "video/*",          use = "video" },
-  { mime = "audio/*",          use = "audio" },
-  { mime = "application/pdf",  use = "pdf" },
-  { mime = "application/zip",             use = "extract" },
-  { mime = "application/x-tar",           use = "extract" },
+  { mime = "image/*", use = "image" },
+  { mime = "video/*", use = "video" },
+  { mime = "audio/*", use = "audio" },
+  { mime = "application/pdf", use = "pdf" },
+  { mime = "application/zip", use = "extract" },
+  { mime = "application/x-tar", use = "extract" },
   { mime = "application/x-7z-compressed", use = "extract" },
-  { mime = "application/x-rar",           use = "extract" },
-  { url  = "*",                use = "edit" },
+  { mime = "application/x-rar", use = "extract" },
+  { mime = "*", use = "edit" },
 ]
 
 [tasks]

@@ -28,5 +28,10 @@ use = "llanosrocas/yaziline"
 rev = "c975c26"
 hash = "f5e051378c7ee472234ed2abdf0252e7"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:no-status"
+rev = "c591a36"
+hash = "3e023d31f29201efdac2a6ae35fedb78"
+
 [flavor]
 deps = []

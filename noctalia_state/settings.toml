@@ -1,0 +1,556 @@
+config_version = 13
+
+[backdrop]
+enabled = true
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    background_opacity = 0.89999997988343239
+    border = "primary"
+    capsule_radius = 12
+    capsule_thickness = 0.79999998584389687
+    center = [ "group:g2" ]
+    color = "primary"
+    end = [ "group:g1", "session" ]
+    font_weight = 700
+    margin_edge = 8
+    margin_ends = 8
+    panel_overlap = 0
+    scale = 1.1500000096857548
+    shadow = false
+    start = [ "clock_2", "workspaces" ]
+    thickness = 32
+    widget_spacing = 8
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "primary"
+        id = "g1"
+        members = [ "keyboard_layout", "volume", "notifications", "tray" ]
+        opacity = 0.89999997615814209
+        padding = 6.0
+        radius = 12.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "clock", "cat" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 12.0
+
+[control_center]
+hidden_tabs = [ "monitor", "power", "bluetooth" ]
+
+    [control_center.calendar]
+    show_events_card = false
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "clipboard"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "yocraft/custom-shortcut:shortcut"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.89999997988343239
+border_width = 20.0
+icon_size = 32
+layer = "overlay"
+radius = 12
+reserve_space = false
+shadow = false
+show_instance_count = false
+smart_auto_hide = true
+
+[hooks]
+colors_changed = "systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gnome"
+logging_out = "sh -c \"stop.sh\""
+rebooting = "sh -c \"stop.sh\""
+shutting_down = "sh -c \"stop.sh\""
+theme_mode_changed = "systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gnome"
+wallpaper_changed = "systemctl --user restart xdg-desktop-portal xdg-desktop-portal-gnome"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 300.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 600.0
+
+[keybinds]
+down = [ "Down", "Ctrl+j" ]
+left = [ "Left", "Ctrl+h" ]
+right = [ "Right", "Ctrl+l" ]
+up = [ "Up", "Ctrl+k" ]
+
+[location]
+address = "Belarus,Akhrëmovtsy"
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DVI-D-1", "lockscreen-widget-0000000000000007" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DVI-D-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 718.0
+    output = "DVI-D-1"
+    placement_height = 1024.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DVI-D-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.90000000000000002
+        background_radius = 12.0
+        center_password_text = true
+        input_opacity = 0.90000000000000002
+        input_radius = 12.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
+    box_height = 136.0
+    box_width = 360.0
+    cx = 656.0
+    cy = 552.0
+    output = "DVI-D-1"
+    placement_height = 1024.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000007.settings]
+        background_color = "surface_variant"
+        background_opacity = 0.90000000000000002
+        background_radius = 12
+        color = "primary"
+        shadow = false
+
+[nightlight]
+enabled = true
+temperature_day = 6000
+temperature_night = 6000
+
+[notification]
+background_opacity = 0.89999997988343239
+layer = "overlay"
+show_actions = false
+
+[osd]
+background_opacity = 0.89999997988343239
+offset_y = 14
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+    [osd.kinds]
+    bluetooth = false
+    brightness = false
+    keyboard_backlight = false
+    keyboard_layout = false
+    lock_keys = false
+    nightlight = false
+    power_profile = false
+    privacy = false
+    wifi = false
+
+[plugin_settings."alexander/game-launcher"]
+heroic_enabled = false
+lutris_enabled = false
+
+[plugin_settings."imjustdoingmypart/niri-animations"]
+docked_open_near_click = true
+include_prefix = "../presets"
+picker_open_near_click = true
+picker_placement = "attached"
+presets_dir = "~/.config/niri/presets"
+target_file = "~/.config/niri/include/animations.kdl"
+
+[plugin_settings."noctalia/notes"]
+notes_dir = "/home/hihity/media/documents/notes"
+panel_open_near_click = true
+panel_placement = "attached"
+
+[plugin_settings."noctalia/screen_recorder"]
+directory = "/home/hihity/media/videos/recordings"
+filename_pattern = "record-%H:%M_%d.%m"
+frame_rate = 75
+replay_duration = 15
+replay_enabled = true
+replay_filename_pattern = "replay-%H:%M_%d.%m"
+show_cursor = false
+video_source = "focused"
+
+[plugin_settings."noctalia/timer"]
+panel_open_near_click = false
+panel_placement = "floating"
+
+[plugin_settings."nomadcxx/gslapper"]
+glyph = ""
+picker_placement = "floating"
+scale = "stretch"
+
+[plugin_settings."radimous/prismlauncher-instances"]
+launcher_exec_command = "elyprismlauncher"
+prism_path = "~/.local/share/ElyPrismLauncher"
+
+[plugin_settings."whyoolw/dropwall"]
+layer = "bottom"
+per_monitor = true
+
+[plugin_settings."yocraft/custom-shortcut"]
+icon = "refresh"
+label = "restart"
+onclick_cmd = "restart-noctalia.sh"
+
+[plugin_settings."yocraft/web-launcher"]
+icon_provider = "duckduckgo"
+links = [
+    "Soundcloud|https://soundcloud.com/",
+    "YouTube|https://youtube.com",
+    "Reddit|https://reddit.com",
+    "Mail|https://mail.proton.me",
+    "GitHub|https://github.com"
+]
+
+[plugin_settings."yuuto/arch-updater"]
+aur_helper = "paru"
+flatpak_enabled = false
+panel_open_near_click = false
+panel_placement = "floating"
+
+[plugins]
+enabled = [
+    "noctalia/timer",
+    "noctalia/notes",
+    "yocraft/custom-shortcut",
+    "yuuto/arch-updater",
+    "oldirtty/color_picker",
+    "whyoolw/dropwall",
+    "alexander/game-launcher",
+    "kenn/keybind-cheatsheet",
+    "imjustdoingmypart/niri-animations",
+    "yocraft/web-launcher",
+    "noctalia/translator",
+    "noctalia/bongocat",
+    "radimous/prismlauncher-instances",
+    "fel/ocr"
+]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+    [[plugins.source]]
+    kind = "path"
+    location = "~/.local/state/noctalia/plugins/materialized/custom"
+    name = "custom"
+
+[shell]
+app_icon_color = "primary"
+font_family = "Adwaita Sans"
+niri_overview_type_to_launch_enabled = true
+panel_anchor_bar = "default"
+password_style = "random"
+polkit_agent = true
+popup_shadows = false
+screen_time_enabled = true
+show_location = false
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.launcher]
+    auto_paste = "ctrl_v"
+    categories = false
+
+        [shell.launcher.dmenu.entry.keybinds]
+        command = "printf 'Open	Show keybind cheatsheet'"
+        exec = "noctalia msg panel-open kenn/keybind-cheatsheet:cheatsheet"
+        global = false
+        glyph = "keyboard"
+        label = "Keybind Cheatsheet"
+        prefix = "keys"
+
+        [shell.launcher.dmenu.entry.obs]
+        command = """printf 'Toggle Recording	Start or stop recording
+Toggle Replay Buffer	Start/stop replay buffer
+Save Replay	Save replay buffer to file
+'"""
+        exec = "case \"{selection}\" in \"Toggle Recording\"*) obs-status.sh -recording ;; \"Toggle Replay Buffer\"*) obs-status.sh -buffer ;; \"Save Replay\"*) obs-status.sh -replay ;; esac"
+        global = false
+        glyph = "video"
+        label = "OBS"
+        prefix = "rec"
+
+        [shell.launcher.dmenu.entry.warp]
+        command = """printf 'Connect	Connect to WARP
+Disconnect	Disconnect from WARP
+Status	Show connection status
+'"""
+        exec = "case \"{selection}\" in \"Connect\"*) warp-cli connect && sleep 1 && notify-send 'WARP' \"$(warp-cli status)\" || notify-send 'WARP' 'Failed to connect' ;; \"Disconnect\"*) warp-cli disconnect && sleep 1 && notify-send 'WARP' \"$(warp-cli status)\" || notify-send 'WARP' 'Failed to disconnect' ;; \"Status\"*) notify-send 'WARP Status' \"$(warp-cli status)\" ;; esac"
+        global = false
+        glyph = "shield"
+        label = "Cloudflare WARP"
+        prefix = "warp"
+
+        [shell.launcher.providers.calculator]
+        prefix = ""
+
+        [shell.launcher.providers.emoji]
+        prefix = ""
+
+        [shell.launcher.providers.session]
+        prefix = ""
+
+        [shell.launcher.providers.wallpaper]
+        prefix = ""
+
+        [shell.launcher.providers.windows]
+        prefix = ""
+
+    [shell.panel]
+    clipboard_placement = "attached"
+    control_center_position = "center"
+    list_item_background = true
+    open_near_click_clipboard = true
+    open_near_click_control_center = true
+    open_near_click_launcher = true
+    open_near_click_session = true
+    open_near_click_wallpaper = true
+    polkit_placement = "attached"
+    shadow = false
+    wallpaper_position = "center"
+
+    [shell.screen_corners]
+    size = 12
+
+    [shell.screenshot]
+    confirm_region = true
+    directory = "/home/hihity/media/pictures/screenshots"
+    filename_pattern = "%Y-%m-%d_%H-%M-%S"
+    show_cursor = true
+
+    [shell.session]
+    show_shortcuts = false
+
+    [shell.shadow]
+    direction = "down_left"
+
+[theme]
+builtin = "Kanagawa"
+community_palette = "Atuel"
+custom_palette = "gruvbox"
+mode = "dark"
+source = "wallpaper"
+
+    [theme.templates]
+    builtin_ids = [
+        "alacritty",
+        "btop",
+        "cava",
+        "emacs",
+        "foot",
+        "gtk3",
+        "gtk4",
+        "ghostty",
+        "helix",
+        "hyprland",
+        "kcolorscheme",
+        "kitty",
+        "labwc",
+        "mango",
+        "niri",
+        "qt",
+        "scroll",
+        "starship",
+        "sway",
+        "umbriel",
+        "wezterm"
+    ]
+    community_ids = [
+        "antigravity",
+        "feishin",
+        "pywalfox",
+        "pywalfox-beta4",
+        "discord",
+        "telegram",
+        "driftwm",
+        "blender",
+        "darktable",
+        "gimp",
+        "libreoffice",
+        "micro",
+        "neovim",
+        "obsidian",
+        "elyprismlauncher",
+        "steam",
+        "fuzzel",
+        "rofi",
+        "obs",
+        "hyprtoolkit",
+        "papirus-icons",
+        "bat",
+        "fzf",
+        "lazygit",
+        "yazi"
+    ]
+
+[wallpaper]
+directory = "/home/hihity/media/pictures/wallpapers"
+transition = [ "fade" ]
+
+    [wallpaper.automation]
+    recursive = false
+
+    [wallpaper.default]
+    path = "/home/hihity/media/pictures/wallpapers/a-07.png"
+
+    [wallpaper.last]
+    path = "/home/hihity/media/pictures/wallpapers/a-07.png"
+
+    [wallpaper.monitors.DVI-D-1]
+    path = "/home/hihity/media/pictures/wallpapers/a-07.png"
+
+[widget.active_window]
+display = "text_only"
+
+[widget.audio_visualizer]
+scale = 2.5
+scroll_repeat = "steps"
+
+[widget.battery]
+enabled = false
+
+[widget.cat]
+audio_spectrum = true
+input_devices = [
+    "/dev/input/by-id/usb-SEMICO_USB_Gaming_Keyboard-event-kbd",
+    "/dev/input/by-id/usb-Telink_Wired_Gaming_Mouse-event-mouse"
+]
+scale = 1.25
+type = "noctalia/bongocat:cat"
+
+[widget.clipboard]
+enabled = false
+
+[widget.clock]
+capsule = true
+capsule_radius = 12
+
+[widget.clock_2]
+capsule = true
+capsule_fill = "primary"
+capsule_opacity = 0.90000000000000002
+capsule_radius = 12
+color = "surface_variant"
+format = "{:%a}, {:%b %d }"
+icon_color = "surface_variant"
+type = "clock"
+
+[widget.keyboard_layout]
+color = "surface_variant"
+icon_color = "surface_variant"
+
+[widget.notifications]
+color = "surface_variant"
+enabled = false
+icon_color = "surface_variant"
+
+[widget.session]
+capsule = true
+capsule_fill = "error"
+capsule_radius = 12
+color = "surface_variant"
+icon_color = "surface_variant"
+scale = 1.1000000000000001
+
+[widget.sysmon]
+custom_image_colorize = true
+stat = "ram_used"
+
+[widget.taskbar]
+capsule = true
+scale = 1.3
+
+[widget.tray]
+color = "surface_variant"
+drawer = true
+drawer_columns = 5
+drawer_item_size = 20.0
+icon_color = "surface_variant"
+
+[widget.volume]
+color = "surface_variant"
+icon_color = "surface_variant"
+
+[widget.weather]
+capsule_border = "tertiary"
+capsule_fill = "hover"
+show_condition = false
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+capsule = true
+change_color_on_hover = false
+style = "minimal"
