@@ -1,16 +1,16 @@
 binds {
-    Super+Return      { spawn "kitty"; }
-    Super+E           { spawn "kitty" "-e" "yazi"; }
-    Super+I           { spawn "kitty" "-e" "nvim"; }
-    Super+U           { spawn "nautilus"; }
-    Super+X           { screenshot; }
-    Super+Shift+X     { screenshot-screen; }
+    Super+Return           { spawn "kitty"; }
+    Super+Shift+Return     { spawn "librewolf"; }
+    Super+E                { spawn "kitty" "-e" "yazi"; }
+    Super+I                { spawn "kitty" "-e" "nvim"; }
+    Super+U                { spawn "nautilus"; }
+    Super+X                { screenshot; }
+    Super+Shift+X          { screenshot-screen; }
 
     Super+Z           { spawn-sh "noctalia msg panel-toggle control-center"; }
     Super+D           { spawn-sh "noctalia msg panel-toggle launcher"; }
     Super+Shift+D     { spawn-sh "noctalia msg panel-toggle launcher /"; }
     Super+W           { spawn-sh "noctalia msg panel-toggle launcher '/wall '"; }
-    Super+T           { spawn-sh "noctalia msg panel-toggle launcher '/web '"; }
     Super+R           { spawn-sh "noctalia msg panel-toggle launcher '/rec '"; }
     Super+Escape      { spawn-sh "noctalia msg panel-toggle session"; }
     Super+B           { spawn-sh "noctalia msg session lock"; }
@@ -18,13 +18,11 @@ binds {
     Super+N           { spawn-sh "noctalia msg panel-toggle imjustdoingmypart/niri-animations:docked"; }
     Super+Shift+N     { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
     Super+Comma       { spawn-sh "noctalia msg settings-open"; }
-    Super+TaB         { spawn-sh "noctalia msg window-switcher"; }
-    Alt+Tab           { spawn-sh "noctalia msg window-switcher"; }
     Super+Shift+C     { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Super+P           { spawn-sh "noctalia msg media toggle"; }
 
-    XF86AudioRaiseVolume     { spawn-sh "noctalia msg volume-up"; }
-    XF86AudioLowerVolume     { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioRaiseVolume     { spawn-sh "noctalia msg volume-up 2"; }
+    XF86AudioLowerVolume     { spawn-sh "noctalia msg volume-down 2"; }
     XF86AudioMute            { spawn-sh "noctalia msg volume-mute"; }
 
     Super+Q           { close-window; }
@@ -33,7 +31,7 @@ binds {
     Super+V           { toggle-window-floating; }
     Super+Shift+V     { switch-focus-between-floating-and-tiling; }
     Super+O           { toggle-overview; }
-    Super+M           { toggle-column-tabbed-display; }
+    Super+M           { spawn-sh "noctalia msg mic-mute"; }
 
     Super+S           { switch-preset-column-width; }
     Super+Shift+S     { switch-preset-column-width-back; }

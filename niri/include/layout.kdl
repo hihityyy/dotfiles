@@ -1,6 +1,6 @@
 layout {
     always-center-single-column
-    gaps 8
+    gaps 12
     preset-column-widths {
         proportion 1.0
         proportion 0.66667
