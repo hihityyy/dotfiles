@@ -19,7 +19,7 @@ video = [
   { run = 'celluloid %s', orphan = true, desc = "Celluloid" },
 ]
 audio = [
-  { run = 'lollypop -f %s', orphan = true, desc = "Lollypop" },
+  { run = 'lollypop %s', orphan = true, desc = "Lollypop" },
   { run = 'celluloid %s', orphan = true, desc = "Celluloid" },
 ]
 pdf = [

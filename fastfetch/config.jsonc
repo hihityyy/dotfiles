@@ -10,18 +10,7 @@
   },
   "display": {
     "separator": " ",
-    "color": {
-      "keys": "#d8e7ec",
-      "title": "#c2c7c9"
-    },
     "disableLinewrap": true,
-    "percent": {
-      "color": {
-        "green": "#eee0f0",
-        "yellow": "#bac9ce",
-        "red": "#ffb4ab"
-      }
-    }
   },
   "modules": [
     {
@@ -98,7 +87,9 @@
     {
       "type": "disk",
       "key": "   └─  Disk",
-      "keyColor": "yellow"
+      "keyColor": "yellow",
+      "folders": "/",
+      "showAll": false
     }
   ]
 }
